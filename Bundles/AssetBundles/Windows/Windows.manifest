@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3504585392
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: ui/uimain
+      Dependencies: {}
+    Info_1:
+      Name: config/binconfigdata/localizedstrings
+      Dependencies: {}
+    Info_2:
+      Name: config/binconfigdata/sheet1
+      Dependencies: {}
+    Info_3:
+      Name: config/binconfigdata/sheet2
+      Dependencies: {}
