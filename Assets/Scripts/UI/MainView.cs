@@ -80,7 +80,7 @@ public class MainView : BaseView
     #region 事件
     private void OnClickStart(BaseEventData baseEventData)
     {
-        SceneManager.LoadScene("lv1");
+        SceneManager.LoadScene("1");
         FF8.UI.Close(UIID.UIMain);
     }
 
