@@ -1,10 +1,10 @@
-[Ll]ibrary/
-[Ll]ogs/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-[Uu]serSettings/
+/[Ll]ibrary/
+/[Ll]ogs/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Uu]serSettings/
 Assets/AssetStoreTools*
 Packages/packages-lock.json
 
