@@ -1,6 +1,4 @@
 using F8Framework.Core;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CandleBody : MonoBehaviour

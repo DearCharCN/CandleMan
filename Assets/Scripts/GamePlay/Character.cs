@@ -1,52 +1,36 @@
 using F8Framework.Launcher;
 using UnityEngine;
-using static F8Framework.Core.Util;
 
 namespace GamePlay
 {
     public class Character : MonoBehaviour
     {
         [SerializeField]
-        float movementSpeed = 2f;
-        [SerializeField]
-        float jumpForce = 4f;
-        [Tooltip("燃烧的单位时间（长度为1时需要n秒烧完）")]
-        [SerializeField]
-        float burningTime = 10f;
-        [SerializeField]
-        float length;
+        CharacterConfig characterConfig;
 
         Animator fsmAnimator;
         CandleBody candleBody;
+        bool isInited = false;
 
         private void OnValidate()
         {
 #if UNITY_EDITOR
-            GetComponent<CandleBody>().SetLength(length);
+            GetComponent<CandleBody>().SetLength(characterConfig.length);
 #endif
-        }
-
-        private void Awake()
-        {
-            fsmAnimator = GetComponent<Animator>();
-            candleBody = GetComponent<CandleBody>();
         }
 
         public bool IsDead => runTimeLength <= 0;
 
         float runTimeLength;
-        private void Start()
-        {
-            runTimeLength = length;
-            UpdateLengthRender();
-        }
 
         private void Update()
         {
+            if (!isInited) return;
+
             UpdateBurning();
 
             fsmAnimator.SetBool(CharacterFSMConst.LeftArrButton_Keep,
-                IsDead?false: Input.GetKey(KeyCode.A));
+                IsDead ? false : Input.GetKey(KeyCode.A));
             fsmAnimator.SetBool(CharacterFSMConst.RightArrButton_Keep,
                 IsDead ? false : Input.GetKey(KeyCode.D));
             fsmAnimator.SetBool(CharacterFSMConst.JumpButton_Down,
@@ -74,7 +58,7 @@ namespace GamePlay
                     return true;
                 }
             }
-            
+
             Vector2 originRight = new Vector2(transform.position.x, transform.position.y) + Vector2.right * new Vector2(0.5f, 0.5f);
             hits = Physics2D.RaycastAll(originRight, Vector2.down, groundCheckDIs);
             for (int i = 0; i < hits.Length; ++i)
@@ -88,14 +72,36 @@ namespace GamePlay
             return false;
         }
 
+        public void Init(CharacterConfig? config)
+        {
+            fsmAnimator = GetComponent<Animator>();
+            candleBody = GetComponent<CandleBody>();
+
+            if (config != null)
+                characterConfig = config.Value;
+
+            runTimeLength = characterConfig.length;
+            UpdateLengthRender();
+
+            isInited = true;
+        }
+
+        public CharacterConfig GetCurConfig()
+        {
+            CharacterConfig config = new CharacterConfig();
+            var newConfig = CharacterConfig.Clone(ref config);
+            newConfig.length = runTimeLength;
+            return newConfig;
+        }
+
         public float GetMovementSpeed()
         {
-            return movementSpeed;
+            return characterConfig.movementSpeed;
         }
 
         public float GetJumpForce()
         {
-            return jumpForce;
+            return characterConfig.jumpForce;
         }
 
         private void FixedUpdate()
@@ -105,7 +111,7 @@ namespace GamePlay
 
         private void UpdateBurning()
         {
-            float needBurningLen = UnityEngine.Time.deltaTime * (1f / burningTime);
+            float needBurningLen = UnityEngine.Time.deltaTime * (1f / characterConfig.burningTime);
             float newLength = Mathf.Clamp(runTimeLength - needBurningLen, 0, float.MaxValue);
             if (runTimeLength == newLength)
                 return;
