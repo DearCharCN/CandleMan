@@ -26,6 +26,11 @@ namespace GamePlay
                 Input.GetKeyDown(KeyCode.Space));
             fsmAnimator.SetBool(CharacterFSMConst.OnGround,
                 CheckOnGround());
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                LevelSceneMgr.CurrentScene.Interactive.TryTriggerObject();
+            }
         }
 
         const float groundCheckDIs = 0.1f;

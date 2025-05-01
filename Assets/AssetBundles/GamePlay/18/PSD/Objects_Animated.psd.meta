@@ -141,7 +141,7 @@ TextureImporter:
     nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
+  pSDShowRemoveMatteOption: 1
   userData: 
-  assetBundleName: 
+  assetBundleName: gameplay/18/psd/objects_animated
   assetBundleVariant: 

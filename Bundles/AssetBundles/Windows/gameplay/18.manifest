@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 2932512253
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0d3abcd9d8ca5c11c6f42998ed8a580d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ff414f606ea1972259b080d7bcf51689
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundles/GamePlay/18.png
+Dependencies: []

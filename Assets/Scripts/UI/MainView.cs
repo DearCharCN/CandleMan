@@ -4,6 +4,7 @@ using F8Framework.Core;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 using F8Framework.Launcher;
+using NodeCanvas.Tasks.Actions;
 
 public class MainView : BaseView
 {
@@ -80,8 +81,7 @@ public class MainView : BaseView
     #region 事件
     private void OnClickStart(BaseEventData baseEventData)
     {
-        SceneManager.LoadScene("1");
-        FF8.UI.Close(UIID.UIMain);
+        LevelSceneMgr.LoadScene(1);
     }
 
     private void OnClickSetting(BaseEventData baseEventData)

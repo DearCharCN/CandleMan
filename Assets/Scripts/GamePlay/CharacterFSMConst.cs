@@ -27,6 +27,11 @@ namespace GamePlay
         public const string GroundTag = "Ground";
 
         /// <summary>
+        /// 玩家 Tag
+        /// </summary>
+        public const string PlayerTag = "Player";
+
+        /// <summary>
         /// 跳跃 上升 到 下降
         /// </summary>
         public const string Jump_Up_To_Down = "Jump_Up_To_Down";
