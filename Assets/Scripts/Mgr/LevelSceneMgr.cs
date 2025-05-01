@@ -48,6 +48,12 @@ public class LevelSceneMgr : MonoBehaviour
         FF8.UI.Close(UIID.UIMain);
     }
 
+    static public void BackToMain()
+    {
+        SceneManager.LoadScene("main");
+        FF8.UI.Close(UIID.UILevel);
+    }
+
     public void LoadNestScene()
     {
         LoadScene(Level + 1);

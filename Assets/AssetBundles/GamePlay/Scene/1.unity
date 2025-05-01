@@ -7325,6 +7325,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1440676159962233421, guid: da513acc2decb1a4bb158fb1ca5bf5ac, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1440676160444634509, guid: da513acc2decb1a4bb158fb1ca5bf5ac, type: 3}
+      propertyPath: m_Color.a
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1440676160517398361, guid: da513acc2decb1a4bb158fb1ca5bf5ac, type: 3}
+      propertyPath: m_Color.a
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1440676161354817090, guid: da513acc2decb1a4bb158fb1ca5bf5ac, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1440676161484882693, guid: da513acc2decb1a4bb158fb1ca5bf5ac, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 1440676161582287897, guid: da513acc2decb1a4bb158fb1ca5bf5ac, type: 3}
+      propertyPath: length
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1440676161582287897, guid: da513acc2decb1a4bb158fb1ca5bf5ac, type: 3}
+      propertyPath: burningTime
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 1440676161582287901, guid: da513acc2decb1a4bb158fb1ca5bf5ac, type: 3}
       propertyPath: m_Name
       value: character
@@ -7372,6 +7400,14 @@ PrefabInstance:
     - target: {fileID: 1440676161582287909, guid: da513acc2decb1a4bb158fb1ca5bf5ac, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1440676161582287910, guid: da513acc2decb1a4bb158fb1ca5bf5ac, type: 3}
+      propertyPath: m_Size.y
+      value: 1.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 1440676161582287910, guid: da513acc2decb1a4bb158fb1ca5bf5ac, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.7625
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da513acc2decb1a4bb158fb1ca5bf5ac, type: 3}

@@ -1,5 +1,6 @@
 using F8Framework.Launcher;
 using UnityEngine;
+using static F8Framework.Core.Util;
 
 namespace GamePlay
 {
@@ -9,25 +10,51 @@ namespace GamePlay
         float movementSpeed = 2f;
         [SerializeField]
         float jumpForce = 4f;
+        [Tooltip("燃烧的单位时间（长度为1时需要n秒烧完）")]
+        [SerializeField]
+        float burningTime = 10f;
+        [SerializeField]
+        float length;
+
         Animator fsmAnimator;
+        CandleBody candleBody;
+
+        private void OnValidate()
+        {
+#if UNITY_EDITOR
+            GetComponent<CandleBody>().SetLength(length);
+#endif
+        }
 
         private void Awake()
         {
             fsmAnimator = GetComponent<Animator>();
+            candleBody = GetComponent<CandleBody>();
+        }
+
+        public bool IsDead => runTimeLength <= 0;
+
+        float runTimeLength;
+        private void Start()
+        {
+            runTimeLength = length;
+            UpdateLengthRender();
         }
 
         private void Update()
         {
+            UpdateBurning();
+
             fsmAnimator.SetBool(CharacterFSMConst.LeftArrButton_Keep,
-                Input.GetKey(KeyCode.A));
+                IsDead?false: Input.GetKey(KeyCode.A));
             fsmAnimator.SetBool(CharacterFSMConst.RightArrButton_Keep,
-                Input.GetKey(KeyCode.D));
+                IsDead ? false : Input.GetKey(KeyCode.D));
             fsmAnimator.SetBool(CharacterFSMConst.JumpButton_Down,
-                Input.GetKeyDown(KeyCode.Space));
+                IsDead ? false : Input.GetKeyDown(KeyCode.Space));
             fsmAnimator.SetBool(CharacterFSMConst.OnGround,
                 CheckOnGround());
 
-            if (Input.GetKeyDown(KeyCode.E))
+            if (!IsDead && Input.GetKeyDown(KeyCode.E))
             {
                 LevelSceneMgr.CurrentScene.Interactive.TryTriggerObject();
             }
@@ -75,10 +102,32 @@ namespace GamePlay
         {
             FF8.Message.DispatchEvent(CharacterEvent.OnFixedUpdate, this);
         }
+
+        private void UpdateBurning()
+        {
+            float needBurningLen = UnityEngine.Time.deltaTime * (1f / burningTime);
+            float newLength = Mathf.Clamp(runTimeLength - needBurningLen, 0, float.MaxValue);
+            if (runTimeLength == newLength)
+                return;
+
+            runTimeLength = newLength;
+            UpdateLengthRender();
+
+            if (IsDead)
+            {
+                FF8.Message.DispatchEvent(CharacterEvent.Dead);
+            }
+        }
+
+        private void UpdateLengthRender()
+        {
+            candleBody.SetLength(runTimeLength);
+        }
     }
 
     public enum CharacterEvent
     {
         OnFixedUpdate,
+        Dead,
     }
 }
