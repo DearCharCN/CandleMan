@@ -7,7 +7,7 @@ namespace GamePlay
         protected override void OnEnter()
         {
             Rigidbody.velocity += (Vector2.up * Character.GetJumpForce());
-            Debug.Log($"<color=yellow>进入跳跃 {Rigidbody.velocity}</color>");
+            //Debug.Log($"<color=yellow>进入跳跃 {Rigidbody.velocity}</color>");
         }
 
         protected override void OnFixedUpdate()
@@ -21,7 +21,7 @@ namespace GamePlay
         protected override void OnExit()
         {
             Animator.SetBool(CharacterFSMConst.Jump_Up_To_Down, false);
-            Debug.Log($"<color=red>退出跳跃 {Rigidbody.velocity}</color>");
+            //Debug.Log($"<color=red>退出跳跃 {Rigidbody.velocity}</color>");
         }
 
         private void Move()

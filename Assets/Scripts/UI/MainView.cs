@@ -1,10 +1,6 @@
 using UnityEngine;
-using UnityEngine.UI;
 using F8Framework.Core;
-using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
-using F8Framework.Launcher;
-using NodeCanvas.Tasks.Actions;
 
 public class MainView : BaseView
 {

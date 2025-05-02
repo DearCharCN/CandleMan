@@ -13,7 +13,6 @@ public class LevelSceneMgr : MonoBehaviour
     public int Level => lvId;
     public InteractiveModule Interactive { get; private set; }
     public static LevelSceneMgr CurrentScene { get; private set; }
-
     public Character Character { get; private set; }
 
     private void Start()
@@ -49,12 +48,14 @@ public class LevelSceneMgr : MonoBehaviour
 
     static public void LoadScene(int level)
     {
+        FF8.GameObjectPool.DespawnAllClone();
         SceneManager.LoadScene(level.ToString());
         FF8.UI.Close(UIID.UIMain);
     }
 
     static public void BackToMain()
     {
+        FF8.GameObjectPool.DespawnAllClone();
         SceneManager.LoadScene("main");
         FF8.UI.Close(UIID.UILevel);
     }
@@ -88,8 +89,7 @@ public class LevelSceneMgr : MonoBehaviour
 
     private void CreateBody(CharacterConfig config, bool interactive, Vector3 position)
     {
-        var bodyGo = FF8.Asset.Load("body") as GameObject;
-        var bodyIns = GameObject.Instantiate(bodyGo, position: position, rotation: Quaternion.identity);
+        var bodyIns = FF8.GameObjectPool.Spawn("body", position, Quaternion.identity);
         var body = bodyIns.GetComponent<CandleBody>();
         var bodyInter = bodyIns.GetComponent<CandleInteractive>();
 
@@ -100,8 +100,7 @@ public class LevelSceneMgr : MonoBehaviour
     private void CreateNewCharacter(CharacterConfig config, Vector3 position)
     {
         TryDestroyCharacter();
-        var characterGo = FF8.Asset.Load("character") as GameObject;
-        var chIns = GameObject.Instantiate(characterGo, position: position, rotation: Quaternion.identity);
+        var chIns = FF8.GameObjectPool.Spawn("character", position, Quaternion.identity);
         var character = chIns.GetComponent<Character>();
         character.transform.position = position;
         InitCharacter(character, config);
@@ -111,7 +110,7 @@ public class LevelSceneMgr : MonoBehaviour
     {
         if (Character != null)
         {
-            Destroy(Character.gameObject);
+            FF8.GameObjectPool.Despawn(Character);
             Character = null;
         }
     }

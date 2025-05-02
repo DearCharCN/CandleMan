@@ -12773,18 +12773,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1440676161582287897, guid: da513acc2decb1a4bb158fb1ca5bf5ac, type: 3}
-      propertyPath: characterConfig.jumpForce
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1440676161582287897, guid: da513acc2decb1a4bb158fb1ca5bf5ac, type: 3}
-      propertyPath: characterConfig.burningTime
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1440676161582287897, guid: da513acc2decb1a4bb158fb1ca5bf5ac, type: 3}
-      propertyPath: characterConfig.movementSpeed
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 1440676161582287901, guid: da513acc2decb1a4bb158fb1ca5bf5ac, type: 3}
       propertyPath: m_Name
       value: character
@@ -12833,18 +12821,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1440676161582287910, guid: da513acc2decb1a4bb158fb1ca5bf5ac, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: aa006c003ce18bb4ca4ab3ac6fe2e516, type: 2}
-    - target: {fileID: 1440676161582287911, guid: da513acc2decb1a4bb158fb1ca5bf5ac, type: 3}
-      propertyPath: m_Mass
-      value: 1.91
-      objectReference: {fileID: 0}
-    - target: {fileID: 1440676161582287911, guid: da513acc2decb1a4bb158fb1ca5bf5ac, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: aa006c003ce18bb4ca4ab3ac6fe2e516, type: 2}
-    m_RemovedComponents:
-    - {fileID: 1440676160631349981, guid: da513acc2decb1a4bb158fb1ca5bf5ac, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da513acc2decb1a4bb158fb1ca5bf5ac, type: 3}
