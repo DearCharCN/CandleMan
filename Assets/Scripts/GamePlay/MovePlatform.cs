@@ -23,7 +23,7 @@ public class MovePlatform : MonoBehaviour
 
     [Header("到达一侧后等待时间")]
     [SerializeField]
-    public float waitTIme;
+    public float waitTime;
 
     private void OnValidate()
     {
@@ -89,7 +89,7 @@ public class MovePlatform : MonoBehaviour
     {
         float deltaTime = Time.fixedDeltaTime;
         runTimeWait += deltaTime;
-        if (runTimeWait >= waitTIme)
+        if (runTimeWait >= waitTime)
         {
             runTimeWait = 0;
             switch (currentState)
