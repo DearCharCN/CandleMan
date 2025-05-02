@@ -64,12 +64,12 @@ public class MainView : BaseView
 #if UNITY_EDITOR
     protected override void SetComponents()
     {
-        btn_start_btn = transform.Find("btnPanel/btn_start").GetComponent<UnityEngine.UI.Button>();
-        btn_setting_btn = transform.Find("btnPanel/btn_setting").GetComponent<UnityEngine.UI.Button>();
-        btn_exit_btn = transform.Find("btnPanel/btn_exit").GetComponent<UnityEngine.UI.Button>();
-        TextTMP_TextTMP = transform.Find("btnPanel/btn_start/Text (TMP)").GetComponent<TMPro.TMP_Text>();
-        TextTMP_TextTMP_2 = transform.Find("btnPanel/btn_setting/Text (TMP)").GetComponent<TMPro.TMP_Text>();
-        TextTMP_TextTMP_3 = transform.Find("btnPanel/btn_exit/Text (TMP)").GetComponent<TMPro.TMP_Text>();
+        btn_start_btn = transform.Find("bg/btn_start").GetComponent<UnityEngine.UI.Button>();
+        btn_setting_btn = transform.Find("bg/btn_setting").GetComponent<UnityEngine.UI.Button>();
+        btn_exit_btn = transform.Find("bg/btn_exit").GetComponent<UnityEngine.UI.Button>();
+        TextTMP_TextTMP = transform.Find("bg/btn_start/Text (TMP)").GetComponent<TMPro.TMP_Text>();
+        TextTMP_TextTMP_2 = transform.Find("bg/btn_setting/Text (TMP)").GetComponent<TMPro.TMP_Text>();
+        TextTMP_TextTMP_3 = transform.Find("bg/btn_exit/Text (TMP)").GetComponent<TMPro.TMP_Text>();
     }
 #endif
     // 自动获取组件（自动生成，不能删除）
