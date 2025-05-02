@@ -201,7 +201,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "WSAD\u79FB\u52A8\nE\u4EA4\u4E92"
+  m_text: "WSAD\u79FB\u52A8\nE\u4EA4\u4E92\nQ\u5206\u88C2"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5521712e3e1d6274fa22fb8a59b370eb, type: 2}
   m_sharedMaterial: {fileID: -8529046724480135365, guid: 5521712e3e1d6274fa22fb8a59b370eb, type: 2}
