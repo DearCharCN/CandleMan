@@ -1,0 +1,9 @@
+界面名_部件名_序号
+
+界面名对照：
+通用 commom
+封面 fengmian
+关卡选择 xuanze
+局内 就俩按钮 也放common
+结算 jiesuan
+暂停 zanting  只有字体标注

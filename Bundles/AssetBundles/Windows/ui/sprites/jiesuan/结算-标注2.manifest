@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 2473422101
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9c7686d1995ad4596d1f63df4132fb1d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ff414f606ea1972259b080d7bcf51689
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- "Assets/AssetBundles/UI/Sprites/jiesuan/\u7ED3\u7B97-\u6807\u6CE82.jpg"
+Dependencies: []

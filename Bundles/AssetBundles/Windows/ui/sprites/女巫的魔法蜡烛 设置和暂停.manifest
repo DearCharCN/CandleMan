@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 620320290
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 65ba9f9f59556663f0bbd59464d5bca6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ff414f606ea1972259b080d7bcf51689
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- "Assets/AssetBundles/UI/Sprites/\u5973\u5DEB\u7684\u9B54\u6CD5\u8721\u70DB \u8BBE\u7F6E\u548C\u6682\u505C.jpg"
+Dependencies: []

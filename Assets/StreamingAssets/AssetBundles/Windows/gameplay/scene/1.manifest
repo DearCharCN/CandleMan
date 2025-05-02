@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1466736043
+CRC: 3749071964
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: a575ccb6c89882363c0e005f64496eaa
+    Hash: cde9a738d9b42d023199f9cbdba2e12d
   TypeTreeHash:
     serializedVersion: 2
-    Hash: a5c47971774c0ca5df04f61bc0fc2f1b
+    Hash: 0614a8e0fe3636bf86cad4b097189980
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -29,6 +29,8 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 50
   Script: {instanceID: 0}
+- Class: 60
+  Script: {instanceID: 0}
 - Class: 61
   Script: {instanceID: 0}
 - Class: 62
@@ -36,6 +38,8 @@ ClassTypes:
 - Class: 66
   Script: {instanceID: 0}
 - Class: 81
+  Script: {instanceID: 0}
+- Class: 89
   Script: {instanceID: 0}
 - Class: 91
   Script: {instanceID: 0}
@@ -78,11 +82,17 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 7b5934f70cf13e14a9ab475373e32c0c, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: fa7155796051b734daa718462081dc5f, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: af7181f404f1447c0a7a17b3070b952b, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 10de35c06bd446e4d83ce130b7df02cc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8f968a64f7882d94cbcfc28b7dc54785, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 128
@@ -109,6 +119,8 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 1839735485
   Script: {instanceID: 0}
+- Class: 1971053207
+  Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/AssetBundles/GamePlay/Scene/1.unity
@@ -133,3 +145,4 @@ Dependencies:
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/scene/prefabs/body
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/scene/prefabs/character
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/scene/prefabs/finalpoint
+- D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/scene/prefabs/moveplatform

@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 414648645
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ae780d4f152bbbb8d86a5f9cad44919f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ff414f606ea1972259b080d7bcf51689
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundles/UI/Sprites/jiesuan/jiesuan_star_01.png
+Dependencies: []

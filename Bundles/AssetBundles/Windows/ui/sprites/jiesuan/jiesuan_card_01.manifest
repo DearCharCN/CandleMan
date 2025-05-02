@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 2079668868
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: bb74acf9d39ea2ac3a5a40356bfc62ea
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ff414f606ea1972259b080d7bcf51689
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundles/UI/Sprites/jiesuan/jiesuan_card_01.png
+Dependencies: []

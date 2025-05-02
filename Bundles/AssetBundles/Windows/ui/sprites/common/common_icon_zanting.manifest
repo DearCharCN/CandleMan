@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 2264890304
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9c2c3fde6489e2af515489450c74af5b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ff414f606ea1972259b080d7bcf51689
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundles/UI/Sprites/common/common_icon_zanting.png
+Dependencies: []

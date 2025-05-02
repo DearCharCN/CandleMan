@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 3992807892
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1dcea92ff8c23d871a90edbf4a6970a3
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ff414f606ea1972259b080d7bcf51689
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- "Assets/AssetBundles/UI/Sprites/xuanze/\u5173\u5361\u9009\u62E9-\u6807\u6CE8.jpg"
+Dependencies: []
