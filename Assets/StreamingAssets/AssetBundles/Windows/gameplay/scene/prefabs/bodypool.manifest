@@ -1,0 +1,24 @@
+ManifestFileVersion: 0
+CRC: 750988135
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d36c933199dbf96839ee0a86165af2b8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 6ceb0d933d8627542c84965597913c96
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4502fd151dd6479e9d3de32a51d6820c, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundles/GamePlay/Scene/Prefabs/bodyPool.prefab
+Dependencies:
+- D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/scene/prefabs/body

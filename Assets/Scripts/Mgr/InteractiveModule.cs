@@ -39,7 +39,20 @@ public class InteractiveModule
     {
         if (Object != null)
         {
-            Object.OnInteractiveExit();
+            bool canCallback = true;
+            if (Object is MonoBehaviour)
+            {
+                if ((Object as MonoBehaviour).gameObject == null)
+                {
+                    canCallback = false;
+                }
+            }
+
+            if (canCallback)
+            {
+                Object.OnInteractiveExit();
+            }
+            
             Object = null;
         }
     }

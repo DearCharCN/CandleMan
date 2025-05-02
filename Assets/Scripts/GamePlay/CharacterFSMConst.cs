@@ -35,6 +35,11 @@ namespace GamePlay
         /// 跳跃 上升 到 下降
         /// </summary>
         public const string Jump_Up_To_Down = "Jump_Up_To_Down";
-        
+
+
+        /// <summary>
+        /// 最短长度
+        /// </summary>
+        public const float MinLength = 0.2f;
     }
 }

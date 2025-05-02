@@ -120,6 +120,9 @@ public class LevelSceneMgr : MonoBehaviour
         //分裂蜡烛
         //在当前人物位置创建Body
         var characterConfig = Character.GetCurConfig();
+        if (characterConfig.length < CharacterFSMConst.MinLength)
+            return;
+
         float halfLen = characterConfig.length / 2f;
         characterConfig.length = halfLen;
         var characterPos = Character.transform.position;

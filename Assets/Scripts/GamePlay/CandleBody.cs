@@ -1,5 +1,7 @@
 using F8Framework.Core;
+using GamePlay;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class CandleBody : MonoBehaviour
 {
@@ -29,7 +31,7 @@ public class CandleBody : MonoBehaviour
         if (length == this.length)
             return;
         this.length = length;
-        var len = Mathf.Clamp(length, 0.2f, float.MaxValue);
+        var len = Mathf.Clamp(length, CharacterFSMConst.MinLength, float.MaxValue);
         rootTrans.SetSizeDeltaHeight(unitHeight * len);
         bodySpriteTrans.SetLocalScaleY(len);
         var @cSize = boxCollider2D.size;
@@ -42,7 +44,11 @@ public class CandleBody : MonoBehaviour
 
         if (lightSprites != null)
         {
-            float alpha = Mathf.Clamp(length, 0, 0.6f);
+            float alpha = 1f;
+            if (length < 0.6f)
+            {
+                alpha = length / 0.6f;
+            }
             for (int i = 0; i < lightSprites.Length; ++i)
             {
                 var @color = lightSprites[i].color;

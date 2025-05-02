@@ -1,16 +1,227 @@
 ManifestFileVersion: 0
-CRC: 3504585392
+CRC: 2903390022
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
       Name: ui/uimain
       Dependencies: {}
     Info_1:
-      Name: config/binconfigdata/localizedstrings
+      Name: ui/uilevel
       Dependencies: {}
     Info_2:
+      Name: gameplay/character/characterfsm
+      Dependencies:
+        Dependency_0: gameplay/character/jump
+        Dependency_1: gameplay/character/movement
+    Info_3:
+      Name: gameplay/character/jump
+      Dependencies: {}
+    Info_4:
+      Name: gameplay/character/movement
+      Dependencies: {}
+    Info_5:
+      Name: gameplay/map/candlemap
+      Dependencies:
+        Dependency_0: gameplay/map/map_base_01
+        Dependency_1: gameplay/map/map_base_02
+        Dependency_2: gameplay/map/map_base_03
+        Dependency_3: gameplay/map/map_base_04
+        Dependency_4: gameplay/map/map_base_05
+        Dependency_5: gameplay/map/map_base_06
+        Dependency_6: gameplay/map/map_base_07
+        Dependency_7: gameplay/map/map_base_08
+        Dependency_8: gameplay/map/map_base_09
+        Dependency_9: gameplay/map/map_water_01
+        Dependency_10: gameplay/map/map_water_02
+    Info_6:
+      Name: gameplay/map/map_base_01
+      Dependencies: {}
+    Info_7:
+      Name: gameplay/map/map_base_02
+      Dependencies: {}
+    Info_8:
+      Name: gameplay/map/map_base_03
+      Dependencies: {}
+    Info_9:
+      Name: gameplay/map/map_base_04
+      Dependencies: {}
+    Info_10:
+      Name: gameplay/map/map_base_05
+      Dependencies: {}
+    Info_11:
+      Name: gameplay/map/map_base_06
+      Dependencies: {}
+    Info_12:
+      Name: gameplay/map/map_base_07
+      Dependencies: {}
+    Info_13:
+      Name: gameplay/map/map_base_08
+      Dependencies: {}
+    Info_14:
+      Name: gameplay/map/map_base_09
+      Dependencies: {}
+    Info_15:
+      Name: gameplay/map/map_water_01
+      Dependencies: {}
+    Info_16:
+      Name: gameplay/map/map_water_02
+      Dependencies: {}
+    Info_17:
+      Name: gameplay/scene/1
+      Dependencies:
+        Dependency_0: gameplay/map/map_base_01
+        Dependency_1: gameplay/map/map_base_02
+        Dependency_2: gameplay/map/map_base_03
+        Dependency_3: gameplay/map/map_base_04
+        Dependency_4: gameplay/map/map_base_05
+        Dependency_5: gameplay/map/map_base_06
+        Dependency_6: gameplay/map/map_base_07
+        Dependency_7: gameplay/map/map_base_08
+        Dependency_8: gameplay/map/map_base_09
+        Dependency_9: gameplay/scene/prefabs/character
+        Dependency_10: gameplay/scene/prefabs/finalpoint
+        Dependency_11: gameplay/background/map_bg_00000
+        Dependency_12: gameplay/background/map_bg_01101
+        Dependency_13: gameplay/background/map_bg_01201
+        Dependency_14: gameplay/background/map_bg_01202
+        Dependency_15: gameplay/background/map_bg_01203
+        Dependency_16: gameplay/background/map_bg_01204
+        Dependency_17: gameplay/background/map_bg_01301
+        Dependency_18: gameplay/background/map_bg_01302
+        Dependency_19: gameplay/scene/prefabs/body
+    Info_18:
+      Name: gameplay/scene/2
+      Dependencies:
+        Dependency_0: gameplay/map/map_base_01
+        Dependency_1: gameplay/map/map_base_02
+        Dependency_2: gameplay/map/map_base_03
+        Dependency_3: gameplay/map/map_base_04
+        Dependency_4: gameplay/map/map_base_05
+        Dependency_5: gameplay/map/map_base_06
+        Dependency_6: gameplay/map/map_base_07
+        Dependency_7: gameplay/map/map_base_08
+        Dependency_8: gameplay/map/map_base_09
+        Dependency_9: gameplay/scene/prefabs/character
+        Dependency_10: gameplay/scene/prefabs/finalpoint
+        Dependency_11: gameplay/scene/prefabs/body
+    Info_19:
+      Name: gameplay/character/sprite/candle_fire_01
+      Dependencies: {}
+    Info_20:
+      Name: gameplay/character/sprite/candle_fire_01_point
+      Dependencies: {}
+    Info_21:
+      Name: gameplay/character/sprite/candle_fire_01_point2
+      Dependencies: {}
+    Info_22:
+      Name: gameplay/character/sprite/candle_huawen_01
+      Dependencies: {}
+    Info_23:
+      Name: gameplay/character/sprite/candle_light_01
+      Dependencies: {}
+    Info_24:
+      Name: gameplay/character/sprite/candle_light_01_point
+      Dependencies: {}
+    Info_25:
+      Name: gameplay/character/sprite/candle_light_01_point2
+      Dependencies: {}
+    Info_26:
+      Name: gameplay/character/sprite/candle_shangban_01
+      Dependencies: {}
+    Info_27:
+      Name: gameplay/character/sprite/candle_shangban_01_point
+      Dependencies: {}
+    Info_28:
+      Name: gameplay/character/sprite/candle_shangban_01_point2
+      Dependencies: {}
+    Info_29:
+      Name: gameplay/character/sprite/candle_xiaban_01
+      Dependencies: {}
+    Info_30:
+      Name: gameplay/character/sprite/candle_xiaban_01_point
+      Dependencies: {}
+    Info_31:
+      Name: gameplay/character/sprite/candle_xiaban_01_point2
+      Dependencies: {}
+    Info_32:
+      Name: gameplay/character/sprite/candle_zhongjian_01
+      Dependencies: {}
+    Info_33:
+      Name: gameplay/scene/prefabs/character
+      Dependencies:
+        Dependency_0: gameplay/character/characterfsm
+        Dependency_1: gameplay/character/sprite/candle_fire_01
+        Dependency_2: gameplay/character/sprite/candle_huawen_01
+        Dependency_3: gameplay/character/sprite/candle_light_01
+        Dependency_4: gameplay/character/sprite/candle_shangban_01
+        Dependency_5: gameplay/character/sprite/candle_xiaban_01
+        Dependency_6: gameplay/character/sprite/candle_zhongjian_01
+        Dependency_7: gameplay/scene/prefabs/defaulphysicalmaterial
+    Info_34:
+      Name: gameplay/scene/prefabs/finalpoint
+      Dependencies: {}
+    Info_35:
+      Name: config/binconfigdata/localizedstrings
+      Dependencies: {}
+    Info_36:
       Name: config/binconfigdata/sheet1
       Dependencies: {}
-    Info_3:
+    Info_37:
       Name: config/binconfigdata/sheet2
+      Dependencies: {}
+    Info_38:
+      Name: gameplay/background/map_bg_00000
+      Dependencies: {}
+    Info_39:
+      Name: gameplay/background/map_bg_00400
+      Dependencies: {}
+    Info_40:
+      Name: gameplay/background/map_bg_01101
+      Dependencies: {}
+    Info_41:
+      Name: gameplay/background/map_bg_01201
+      Dependencies: {}
+    Info_42:
+      Name: gameplay/background/map_bg_01202
+      Dependencies: {}
+    Info_43:
+      Name: gameplay/background/map_bg_01203
+      Dependencies: {}
+    Info_44:
+      Name: gameplay/background/map_bg_01204
+      Dependencies: {}
+    Info_45:
+      Name: gameplay/background/map_bg_01301
+      Dependencies: {}
+    Info_46:
+      Name: gameplay/background/map_bg_01302
+      Dependencies: {}
+    Info_47:
+      Name: gameplay/background/map_bg_02101
+      Dependencies: {}
+    Info_48:
+      Name: "gameplay/background/\u5173\u53611\u793A\u610F"
+      Dependencies: {}
+    Info_49:
+      Name: "gameplay/background/\u5173\u53612\u793A\u610F \u5C40\u90E8"
+      Dependencies: {}
+    Info_50:
+      Name: gameplay/scene/prefabs/body
+      Dependencies:
+        Dependency_0: gameplay/character/characterfsm
+        Dependency_1: gameplay/character/sprite/candle_huawen_01
+        Dependency_2: gameplay/character/sprite/candle_shangban_01
+        Dependency_3: gameplay/character/sprite/candle_xiaban_01
+        Dependency_4: gameplay/character/sprite/candle_zhongjian_01
+        Dependency_5: gameplay/scene/prefabs/defaulphysicalmaterial
+    Info_51:
+      Name: gameplay/scene/prefabs/bodypool
+      Dependencies:
+        Dependency_0: gameplay/scene/prefabs/body
+    Info_52:
+      Name: gameplay/scene/prefabs/characterpool
+      Dependencies:
+        Dependency_0: gameplay/scene/prefabs/character
+    Info_53:
+      Name: gameplay/scene/prefabs/defaulphysicalmaterial
       Dependencies: {}

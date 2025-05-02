@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 2662531139
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 52cbf4c74db32c65e9ba06d5e6c3ec80
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 54ce5020199c102c6f31c59bb91dcd25
+HashAppended: 0
+ClassTypes:
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c28ffb2c1c5cce34486a9bebbbde02ab, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 11927e40521466e49b7b6404890fa8a6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 79161b406caa3aa4c91da944bd6add57, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 10de35c06bd446e4d83ce130b7df02cc, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundles/GamePlay/Character/CHaracterFSM.controller
+- Assets/AssetBundles/GamePlay/Character/CharacterFSM.asset
+Dependencies:
+- D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/character/jump
+- D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/character/movement

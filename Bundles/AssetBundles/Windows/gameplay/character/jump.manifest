@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 3450970289
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 95b2a9eef71b16e888a47c3b023c5a8d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 7dfb045827e1bc42b15dd84b6536b54c
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundles/GamePlay/Character/Jump.asset
+Dependencies: []
