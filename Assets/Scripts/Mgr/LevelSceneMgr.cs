@@ -115,6 +115,20 @@ public class LevelSceneMgr : MonoBehaviour
             Character = null;
         }
     }
+
+    public void SeparateCharacter()
+    {
+        //分裂蜡烛
+        //在当前人物位置创建Body
+        var characterConfig = Character.GetCurConfig();
+        float halfLen = characterConfig.length / 2f;
+        characterConfig.length = halfLen;
+        var characterPos = Character.transform.position;
+        CreateBody(characterConfig, false, characterPos);
+        //将人物长度缩短一半，并矫正位置
+        Character.Init(characterConfig);
+        Character.transform.position = characterPos + Vector3.up * halfLen + Vector3.up * 0.1f;
+    }
 }
 
 public enum LevelEvent

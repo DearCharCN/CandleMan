@@ -42,14 +42,20 @@ namespace GamePlay
             {
                 LevelSceneMgr.CurrentScene.Interactive.TryTriggerObject();
             }
+
+            if (!IsDead && Input.GetKeyDown(KeyCode.Q))
+            {
+                LevelSceneMgr.CurrentScene.SeparateCharacter();
+            }
         }
 
         const float groundCheckDIs = 0.1f;
 
         private bool CheckOnGround()
         {
-            Vector2 originLeft = new Vector2(transform.position.x, transform.position.y) + Vector2.left * new Vector2(0.5f, 0.5f);
+            Vector2 originLeft = new Vector2(transform.position.x, transform.position.y) + Vector2.left * new Vector2(0.25f, 0.25f);
             var hits = Physics2D.RaycastAll(originLeft, Vector2.down, groundCheckDIs);
+            Debug.DrawRay(originLeft, Vector2.down);
             for (int i = 0; i < hits.Length; ++i)
             {
                 var hit = hits[i];
@@ -59,8 +65,21 @@ namespace GamePlay
                 }
             }
 
-            Vector2 originRight = new Vector2(transform.position.x, transform.position.y) + Vector2.right * new Vector2(0.5f, 0.5f);
+            Vector2 originRight = new Vector2(transform.position.x, transform.position.y) + Vector2.right * new Vector2(0.25f, 0.25f);
             hits = Physics2D.RaycastAll(originRight, Vector2.down, groundCheckDIs);
+            Debug.DrawRay(originRight, Vector2.down);
+            for (int i = 0; i < hits.Length; ++i)
+            {
+                var hit = hits[i];
+                if (hit.collider != null && hit.collider.tag.Equals(CharacterFSMConst.GroundTag))
+                {
+                    return true;
+                }
+            }
+
+            Vector2 originMid = new Vector2(transform.position.x, transform.position.y);
+            hits = Physics2D.RaycastAll(originMid, Vector2.down, groundCheckDIs);
+            Debug.DrawRay(originMid, Vector2.down);
             for (int i = 0; i < hits.Length; ++i)
             {
                 var hit = hits[i];
@@ -88,8 +107,7 @@ namespace GamePlay
 
         public CharacterConfig GetCurConfig()
         {
-            CharacterConfig config = new CharacterConfig();
-            var newConfig = CharacterConfig.Clone(ref config);
+            var newConfig = CharacterConfig.Clone(ref characterConfig);
             newConfig.length = runTimeLength;
             return newConfig;
         }
