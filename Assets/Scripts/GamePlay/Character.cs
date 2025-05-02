@@ -49,7 +49,33 @@ namespace GamePlay
             }
         }
 
+        private void OnDisable()
+        {
+            TryDisconnectPlatform();
+        }
+
         const float groundCheckDIs = 0.1f;
+
+        MovePlatform connectedPlatform;
+
+        private void TryConnectPlatform(MovePlatform movePlatform)
+        {
+            if (connectedPlatform == movePlatform)
+                return;
+
+            TryDisconnectPlatform();
+            connectedPlatform = movePlatform;
+            movePlatform.OnConnectCharacter(this);
+        }
+
+        private void TryDisconnectPlatform()
+        {
+            if (connectedPlatform != null && connectedPlatform.gameObject != null)
+            {
+                connectedPlatform.OnDisconnectCharacter(this);
+                connectedPlatform = null;
+            }
+        }
 
         private bool CheckOnGround()
         {
@@ -59,8 +85,11 @@ namespace GamePlay
             for (int i = 0; i < hits.Length; ++i)
             {
                 var hit = hits[i];
-                if (hit.collider != null && hit.collider.tag.Equals(CharacterFSMConst.GroundTag))
+                
+                if (hit.collider != null && 
+                    (hit.collider.tag.Equals(CharacterFSMConst.GroundTag) || hit.collider.tag.Equals(CharacterFSMConst.MovePlatformTag)))
                 {
+                    CheckAndConnectPlatform(hit);
                     return true;
                 }
             }
@@ -71,8 +100,10 @@ namespace GamePlay
             for (int i = 0; i < hits.Length; ++i)
             {
                 var hit = hits[i];
-                if (hit.collider != null && hit.collider.tag.Equals(CharacterFSMConst.GroundTag))
+                if (hit.collider != null &&
+                    (hit.collider.tag.Equals(CharacterFSMConst.GroundTag) || hit.collider.tag.Equals(CharacterFSMConst.MovePlatformTag)))
                 {
+                    CheckAndConnectPlatform(hit);
                     return true;
                 }
             }
@@ -83,12 +114,24 @@ namespace GamePlay
             for (int i = 0; i < hits.Length; ++i)
             {
                 var hit = hits[i];
-                if (hit.collider != null && hit.collider.tag.Equals(CharacterFSMConst.GroundTag))
+                if (hit.collider != null &&
+                    (hit.collider.tag.Equals(CharacterFSMConst.GroundTag) || hit.collider.tag.Equals(CharacterFSMConst.MovePlatformTag)))
                 {
+                    CheckAndConnectPlatform(hit);
                     return true;
                 }
             }
             return false;
+        }
+
+        private void CheckAndConnectPlatform(RaycastHit2D hit)
+        {
+            if (hit.collider == null)
+                return;
+            var platform = hit.collider.GetComponent<MovePlatform>();
+            if (platform == null)
+                return;
+            TryConnectPlatform(platform);
         }
 
         public void Init(CharacterConfig? config)

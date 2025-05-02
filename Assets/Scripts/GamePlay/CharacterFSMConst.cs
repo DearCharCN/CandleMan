@@ -27,6 +27,11 @@ namespace GamePlay
         public const string GroundTag = "Ground";
 
         /// <summary>
+        /// Æ½Ì¨ Tag
+        /// </summary>
+        public const string MovePlatformTag = "MovePlatform";
+
+        /// <summary>
         /// Íæ¼Ò Tag
         /// </summary>
         public const string PlayerTag = "Player";

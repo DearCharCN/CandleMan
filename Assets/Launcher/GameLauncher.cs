@@ -59,7 +59,8 @@ namespace F8Framework.Launcher
 
         private void OnPoolLoaded(Object asset)
         {
-            GameObject.Instantiate(asset);
+            //(asset as GameObject).transform.parent = null;
+            GameObject.Instantiate(asset, null);
             DontDestroyOnLoad(asset);
         }
 
