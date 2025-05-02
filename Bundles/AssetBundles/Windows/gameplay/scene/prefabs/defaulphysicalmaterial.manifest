@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 2173414508
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9f1138db6e8e9fb1be1cd1b0f6a71ac5
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0314674c095a731c5b1e6f91323ca13d
+HashAppended: 0
+ClassTypes:
+- Class: 62
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundles/GamePlay/Scene/Prefabs/DefaulPhysicalMaterial.physicsMaterial2D
+Dependencies: []

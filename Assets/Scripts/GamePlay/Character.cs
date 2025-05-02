@@ -42,34 +42,96 @@ namespace GamePlay
             {
                 LevelSceneMgr.CurrentScene.Interactive.TryTriggerObject();
             }
+
+            if (!IsDead && Input.GetKeyDown(KeyCode.Q))
+            {
+                LevelSceneMgr.CurrentScene.SeparateCharacter();
+            }
+        }
+
+        private void OnDisable()
+        {
+            TryDisconnectPlatform();
         }
 
         const float groundCheckDIs = 0.1f;
 
+        MovePlatform connectedPlatform;
+
+        private void TryConnectPlatform(MovePlatform movePlatform)
+        {
+            if (connectedPlatform == movePlatform)
+                return;
+
+            TryDisconnectPlatform();
+            connectedPlatform = movePlatform;
+            movePlatform.OnConnectCharacter(this);
+        }
+
+        private void TryDisconnectPlatform()
+        {
+            if (connectedPlatform != null && connectedPlatform.gameObject != null)
+            {
+                connectedPlatform.OnDisconnectCharacter(this);
+                connectedPlatform = null;
+            }
+        }
+
         private bool CheckOnGround()
         {
-            Vector2 originLeft = new Vector2(transform.position.x, transform.position.y) + Vector2.left * new Vector2(0.5f, 0.5f);
+            Vector2 originLeft = new Vector2(transform.position.x, transform.position.y) + Vector2.left * new Vector2(0.25f, 0.25f);
             var hits = Physics2D.RaycastAll(originLeft, Vector2.down, groundCheckDIs);
+            Debug.DrawRay(originLeft, Vector2.down);
             for (int i = 0; i < hits.Length; ++i)
             {
                 var hit = hits[i];
-                if (hit.collider != null && hit.collider.tag.Equals(CharacterFSMConst.GroundTag))
+                
+                if (hit.collider != null && 
+                    (hit.collider.tag.Equals(CharacterFSMConst.GroundTag) || hit.collider.tag.Equals(CharacterFSMConst.MovePlatformTag)))
                 {
+                    CheckAndConnectPlatform(hit);
                     return true;
                 }
             }
 
-            Vector2 originRight = new Vector2(transform.position.x, transform.position.y) + Vector2.right * new Vector2(0.5f, 0.5f);
+            Vector2 originRight = new Vector2(transform.position.x, transform.position.y) + Vector2.right * new Vector2(0.25f, 0.25f);
             hits = Physics2D.RaycastAll(originRight, Vector2.down, groundCheckDIs);
+            Debug.DrawRay(originRight, Vector2.down);
             for (int i = 0; i < hits.Length; ++i)
             {
                 var hit = hits[i];
-                if (hit.collider != null && hit.collider.tag.Equals(CharacterFSMConst.GroundTag))
+                if (hit.collider != null &&
+                    (hit.collider.tag.Equals(CharacterFSMConst.GroundTag) || hit.collider.tag.Equals(CharacterFSMConst.MovePlatformTag)))
                 {
+                    CheckAndConnectPlatform(hit);
+                    return true;
+                }
+            }
+
+            Vector2 originMid = new Vector2(transform.position.x, transform.position.y);
+            hits = Physics2D.RaycastAll(originMid, Vector2.down, groundCheckDIs);
+            Debug.DrawRay(originMid, Vector2.down);
+            for (int i = 0; i < hits.Length; ++i)
+            {
+                var hit = hits[i];
+                if (hit.collider != null &&
+                    (hit.collider.tag.Equals(CharacterFSMConst.GroundTag) || hit.collider.tag.Equals(CharacterFSMConst.MovePlatformTag)))
+                {
+                    CheckAndConnectPlatform(hit);
                     return true;
                 }
             }
             return false;
+        }
+
+        private void CheckAndConnectPlatform(RaycastHit2D hit)
+        {
+            if (hit.collider == null)
+                return;
+            var platform = hit.collider.GetComponent<MovePlatform>();
+            if (platform == null)
+                return;
+            TryConnectPlatform(platform);
         }
 
         public void Init(CharacterConfig? config)
@@ -88,8 +150,7 @@ namespace GamePlay
 
         public CharacterConfig GetCurConfig()
         {
-            CharacterConfig config = new CharacterConfig();
-            var newConfig = CharacterConfig.Clone(ref config);
+            var newConfig = CharacterConfig.Clone(ref characterConfig);
             newConfig.length = runTimeLength;
             return newConfig;
         }

@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 1269438744
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 18c45b6902b9620e2be50c6fc139f687
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f267fd2d8bcb1179236b6179ac5313bc
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundles/GamePlay/Background/map_bg_01201.png
+Dependencies: []

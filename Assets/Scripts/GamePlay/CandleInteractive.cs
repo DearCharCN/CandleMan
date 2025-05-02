@@ -1,3 +1,4 @@
+using F8Framework.Launcher;
 using GamePlay;
 using UnityEngine;
 
@@ -59,8 +60,7 @@ public class CandleInteractive : MonoBehaviour, IInteractable
     public void OnInteractiveAction()
     {
         LevelSceneMgr.CurrentScene.ChangedCharacter(characterConfig, transform.position);
-
-        Destroy(this.gameObject);
+        FF8.GameObjectPool.Despawn(this);
     }
 
     public void OnInteractiveEnter()

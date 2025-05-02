@@ -47,10 +47,21 @@ namespace F8Framework.Launcher
             FF8.Download = ModuleCenter.CreateModule<DownloadManager>();
             FF8.LogWriter = ModuleCenter.CreateModule<F8LogWriter>();
 
+            yield return FF8.Asset.LoadAsync("characterPool", OnPoolLoaded);
+
+            yield return FF8.Asset.LoadAsync("bodyPool", OnPoolLoaded);
+
             yield return SceneManager.LoadSceneAsync("main");
 
             StartGame();
             yield break;
+        }
+
+        private void OnPoolLoaded(Object asset)
+        {
+            //(asset as GameObject).transform.parent = null;
+            GameObject.Instantiate(asset, null);
+            DontDestroyOnLoad(asset);
         }
 
         // 开始游戏

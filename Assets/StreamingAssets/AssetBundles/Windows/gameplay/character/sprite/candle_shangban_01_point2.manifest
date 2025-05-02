@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 2175976110
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c7b067316de272706ad2b9f8d545e6dd
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f267fd2d8bcb1179236b6179ac5313bc
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundles/GamePlay/Character/Sprite/candle_shangban_01_point2.png
+Dependencies: []

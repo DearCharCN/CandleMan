@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 1744828023
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 547b9515b76860287747c7405a92fc06
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f267fd2d8bcb1179236b6179ac5313bc
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundles/GamePlay/Character/Sprite/candle_light_01_point.png
+Dependencies: []

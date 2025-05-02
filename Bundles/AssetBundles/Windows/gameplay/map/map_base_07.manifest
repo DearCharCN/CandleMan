@@ -1,0 +1,24 @@
+ManifestFileVersion: 0
+CRC: 800090080
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ded58bb6e2aef47bc7ee386fa4c849b2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 7c421f6f63a3b200437c9abc9df0e8d2
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundles/GamePlay/Map/map_base_07.asset
+- Assets/AssetBundles/GamePlay/Map/map_base_07.png
+Dependencies: []

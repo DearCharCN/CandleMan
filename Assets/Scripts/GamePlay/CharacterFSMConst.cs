@@ -27,6 +27,11 @@ namespace GamePlay
         public const string GroundTag = "Ground";
 
         /// <summary>
+        /// 平台 Tag
+        /// </summary>
+        public const string MovePlatformTag = "MovePlatform";
+
+        /// <summary>
         /// 玩家 Tag
         /// </summary>
         public const string PlayerTag = "Player";
@@ -35,6 +40,11 @@ namespace GamePlay
         /// 跳跃 上升 到 下降
         /// </summary>
         public const string Jump_Up_To_Down = "Jump_Up_To_Down";
-        
+
+
+        /// <summary>
+        /// 最短长度
+        /// </summary>
+        public const float MinLength = 0.2f;
     }
 }

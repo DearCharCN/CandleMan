@@ -149,7 +149,22 @@ namespace F8Framework.Core
             return DefaultSpawn(
                 prefab.AttachedPrefab, prefabTransform.localPosition, prefabTransform.localRotation, null, false, out _);
         }
+
+        public GameObject Spawn(string prefabName, Vector3 position, Quaternion rotation)
+        {
+            F8GameObjectPool prefab = GetPoolByPrefabName(prefabName);
+            if (!prefab)
+            {
+                LogF8.LogError("对象池未创建，通过名称生成对象失败。");
+                return null;
+            }
+            Transform prefabTransform = prefab.AttachedPrefab.transform;
+
+            return DefaultSpawn(
+                prefab.AttachedPrefab, position, rotation, null, false, out _);
+        }
         
+
         /// <summary>
         /// Spawns a GameObject.
         /// </summary>
@@ -301,6 +316,16 @@ namespace F8Framework.Core
         public void Despawn(Component clone, float delay = 0f)
         {
             DefaultDespawn(clone.gameObject, delay);
+        }
+
+        public void DespawnAllClone()
+        {
+            List<GameObject> cache = new List<GameObject>();
+            ForEachClone(clone => cache.Add(clone));
+            for (int i = 0; i < cache.Count; ++i)
+            {
+                Despawn(cache[i]);
+            }
         }
 
         /// <summary>
