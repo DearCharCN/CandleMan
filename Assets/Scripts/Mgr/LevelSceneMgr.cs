@@ -52,13 +52,7 @@ public class LevelSceneMgr : MonoBehaviour
         FF8.GameObjectPool.DespawnAllClone();
         SceneManager.LoadScene(level.ToString());
         FF8.UI.Close(UIID.UIMain);
-    }
-
-    static public void FakeLoadScene(int level)
-    {
-        FF8.GameObjectPool.DespawnAllClone();
-        SceneManager.LoadScene(level.ToString());
-        FF8.UI.Close(UIID.UIMain);
+        FF8.UI.Close(UIID.IJiesuan);
     }
 
     static public void BackToMain()
@@ -66,6 +60,7 @@ public class LevelSceneMgr : MonoBehaviour
         FF8.GameObjectPool.DespawnAllClone();
         SceneManager.LoadScene("main");
         FF8.UI.Close(UIID.UILevel);
+        FF8.UI.Close(UIID.IJiesuan);
     }
 
     public void LoadNestScene()

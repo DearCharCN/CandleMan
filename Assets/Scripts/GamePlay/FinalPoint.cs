@@ -1,3 +1,4 @@
+using F8Framework.Launcher;
 using GamePlay;
 using System.Collections;
 using System.Collections.Generic;
@@ -51,8 +52,7 @@ public class FinalPoint : MonoBehaviour,IInteractable
 
     public void OnInteractiveAction()
     {
-        LevelSceneMgr.SetPassLevel(LevelSceneMgr.CurrentScene.Level);
-        LevelSceneMgr.CurrentScene.LoadNestScene();
+        FF8.UI.Open(UIID.IJiesuan);
     }
 
     public void OnInteractiveEnter()
