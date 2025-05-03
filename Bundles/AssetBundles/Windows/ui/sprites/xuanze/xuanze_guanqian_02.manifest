@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 2257037857
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 65f4899243fde7b2168de64d1105b53a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ff414f606ea1972259b080d7bcf51689
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundles/UI/Sprites/xuanze/xuanze_guanqian_02.png
+Dependencies: []

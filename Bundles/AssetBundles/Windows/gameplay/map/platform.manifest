@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 2089621318
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e699061f628dbc3c90813c79341a631f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 80e0ca2f21e8c09da591fe22a0c4e78d
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: af7181f404f1447c0a7a17b3070b952b, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Unity.2D.SpriteShape.Runtime
+  ClassName: UnityEngine.U2D.AngleRange
+- AssemblyName: Unity.2D.SpriteShape.Runtime
+  ClassName: UnityEngine.U2D.CornerSprite
+Assets:
+- Assets/AssetBundles/GamePlay/Map/Platform.asset
+Dependencies:
+- D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/map/map_base_02
+- D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/map/map_base_05
+- D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/map/map_base_08

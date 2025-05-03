@@ -1,25 +1,19 @@
 ManifestFileVersion: 0
-CRC: 2903390022
+CRC: 2668577986
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: ui/uimain
-      Dependencies: {}
-    Info_1:
-      Name: ui/uilevel
-      Dependencies: {}
-    Info_2:
       Name: gameplay/character/characterfsm
       Dependencies:
         Dependency_0: gameplay/character/jump
         Dependency_1: gameplay/character/movement
-    Info_3:
+    Info_1:
       Name: gameplay/character/jump
       Dependencies: {}
-    Info_4:
+    Info_2:
       Name: gameplay/character/movement
       Dependencies: {}
-    Info_5:
+    Info_3:
       Name: gameplay/map/candlemap
       Dependencies:
         Dependency_0: gameplay/map/map_base_01
@@ -33,40 +27,40 @@ AssetBundleManifest:
         Dependency_8: gameplay/map/map_base_09
         Dependency_9: gameplay/map/map_water_01
         Dependency_10: gameplay/map/map_water_02
-    Info_6:
+    Info_4:
       Name: gameplay/map/map_base_01
       Dependencies: {}
-    Info_7:
+    Info_5:
       Name: gameplay/map/map_base_02
       Dependencies: {}
-    Info_8:
+    Info_6:
       Name: gameplay/map/map_base_03
       Dependencies: {}
-    Info_9:
+    Info_7:
       Name: gameplay/map/map_base_04
       Dependencies: {}
-    Info_10:
+    Info_8:
       Name: gameplay/map/map_base_05
       Dependencies: {}
-    Info_11:
+    Info_9:
       Name: gameplay/map/map_base_06
       Dependencies: {}
-    Info_12:
+    Info_10:
       Name: gameplay/map/map_base_07
       Dependencies: {}
-    Info_13:
+    Info_11:
       Name: gameplay/map/map_base_08
       Dependencies: {}
-    Info_14:
+    Info_12:
       Name: gameplay/map/map_base_09
       Dependencies: {}
-    Info_15:
+    Info_13:
       Name: gameplay/map/map_water_01
       Dependencies: {}
-    Info_16:
+    Info_14:
       Name: gameplay/map/map_water_02
       Dependencies: {}
-    Info_17:
+    Info_15:
       Name: gameplay/scene/1
       Dependencies:
         Dependency_0: gameplay/map/map_base_01
@@ -89,7 +83,8 @@ AssetBundleManifest:
         Dependency_17: gameplay/background/map_bg_01301
         Dependency_18: gameplay/background/map_bg_01302
         Dependency_19: gameplay/scene/prefabs/body
-    Info_18:
+        Dependency_20: gameplay/scene/prefabs/moveplatform
+    Info_16:
       Name: gameplay/scene/2
       Dependencies:
         Dependency_0: gameplay/map/map_base_01
@@ -104,49 +99,49 @@ AssetBundleManifest:
         Dependency_9: gameplay/scene/prefabs/character
         Dependency_10: gameplay/scene/prefabs/finalpoint
         Dependency_11: gameplay/scene/prefabs/body
-    Info_19:
+    Info_17:
       Name: gameplay/character/sprite/candle_fire_01
       Dependencies: {}
-    Info_20:
+    Info_18:
       Name: gameplay/character/sprite/candle_fire_01_point
       Dependencies: {}
-    Info_21:
+    Info_19:
       Name: gameplay/character/sprite/candle_fire_01_point2
       Dependencies: {}
-    Info_22:
+    Info_20:
       Name: gameplay/character/sprite/candle_huawen_01
       Dependencies: {}
-    Info_23:
+    Info_21:
       Name: gameplay/character/sprite/candle_light_01
       Dependencies: {}
-    Info_24:
+    Info_22:
       Name: gameplay/character/sprite/candle_light_01_point
       Dependencies: {}
-    Info_25:
+    Info_23:
       Name: gameplay/character/sprite/candle_light_01_point2
       Dependencies: {}
-    Info_26:
+    Info_24:
       Name: gameplay/character/sprite/candle_shangban_01
       Dependencies: {}
-    Info_27:
+    Info_25:
       Name: gameplay/character/sprite/candle_shangban_01_point
       Dependencies: {}
-    Info_28:
+    Info_26:
       Name: gameplay/character/sprite/candle_shangban_01_point2
       Dependencies: {}
-    Info_29:
+    Info_27:
       Name: gameplay/character/sprite/candle_xiaban_01
       Dependencies: {}
-    Info_30:
+    Info_28:
       Name: gameplay/character/sprite/candle_xiaban_01_point
       Dependencies: {}
-    Info_31:
+    Info_29:
       Name: gameplay/character/sprite/candle_xiaban_01_point2
       Dependencies: {}
-    Info_32:
+    Info_30:
       Name: gameplay/character/sprite/candle_zhongjian_01
       Dependencies: {}
-    Info_33:
+    Info_31:
       Name: gameplay/scene/prefabs/character
       Dependencies:
         Dependency_0: gameplay/character/characterfsm
@@ -157,55 +152,47 @@ AssetBundleManifest:
         Dependency_5: gameplay/character/sprite/candle_xiaban_01
         Dependency_6: gameplay/character/sprite/candle_zhongjian_01
         Dependency_7: gameplay/scene/prefabs/defaulphysicalmaterial
-    Info_34:
+    Info_32:
       Name: gameplay/scene/prefabs/finalpoint
-      Dependencies: {}
-    Info_35:
-      Name: config/binconfigdata/localizedstrings
-      Dependencies: {}
-    Info_36:
-      Name: config/binconfigdata/sheet1
-      Dependencies: {}
-    Info_37:
-      Name: config/binconfigdata/sheet2
-      Dependencies: {}
-    Info_38:
+      Dependencies:
+        Dependency_0: ui/fonts/cn sdf
+    Info_33:
       Name: gameplay/background/map_bg_00000
       Dependencies: {}
-    Info_39:
+    Info_34:
       Name: gameplay/background/map_bg_00400
       Dependencies: {}
-    Info_40:
+    Info_35:
       Name: gameplay/background/map_bg_01101
       Dependencies: {}
-    Info_41:
+    Info_36:
       Name: gameplay/background/map_bg_01201
       Dependencies: {}
-    Info_42:
+    Info_37:
       Name: gameplay/background/map_bg_01202
       Dependencies: {}
-    Info_43:
+    Info_38:
       Name: gameplay/background/map_bg_01203
       Dependencies: {}
-    Info_44:
+    Info_39:
       Name: gameplay/background/map_bg_01204
       Dependencies: {}
-    Info_45:
+    Info_40:
       Name: gameplay/background/map_bg_01301
       Dependencies: {}
-    Info_46:
+    Info_41:
       Name: gameplay/background/map_bg_01302
       Dependencies: {}
-    Info_47:
+    Info_42:
       Name: gameplay/background/map_bg_02101
       Dependencies: {}
-    Info_48:
+    Info_43:
       Name: "gameplay/background/\u5173\u53611\u793A\u610F"
       Dependencies: {}
-    Info_49:
+    Info_44:
       Name: "gameplay/background/\u5173\u53612\u793A\u610F \u5C40\u90E8"
       Dependencies: {}
-    Info_50:
+    Info_45:
       Name: gameplay/scene/prefabs/body
       Dependencies:
         Dependency_0: gameplay/character/characterfsm
@@ -214,14 +201,140 @@ AssetBundleManifest:
         Dependency_3: gameplay/character/sprite/candle_xiaban_01
         Dependency_4: gameplay/character/sprite/candle_zhongjian_01
         Dependency_5: gameplay/scene/prefabs/defaulphysicalmaterial
-    Info_51:
+        Dependency_6: ui/fonts/cn sdf
+    Info_46:
       Name: gameplay/scene/prefabs/bodypool
       Dependencies:
         Dependency_0: gameplay/scene/prefabs/body
-    Info_52:
+    Info_47:
       Name: gameplay/scene/prefabs/characterpool
       Dependencies:
         Dependency_0: gameplay/scene/prefabs/character
-    Info_53:
+    Info_48:
       Name: gameplay/scene/prefabs/defaulphysicalmaterial
+      Dependencies: {}
+    Info_49:
+      Name: gameplay/map/platform
+      Dependencies:
+        Dependency_0: gameplay/map/map_base_02
+        Dependency_1: gameplay/map/map_base_05
+        Dependency_2: gameplay/map/map_base_08
+    Info_50:
+      Name: ui/fonts/cn sdf
+      Dependencies:
+        Dependency_0: ui/fonts/cn
+    Info_51:
+      Name: ui/fonts/cn
+      Dependencies: {}
+    Info_52:
+      Name: ui/fonts/num sdf
+      Dependencies:
+        Dependency_0: ui/fonts/num
+    Info_53:
+      Name: ui/fonts/num
+      Dependencies: {}
+    Info_54:
+      Name: "ui/sprites/ui\u547D\u540D"
+      Dependencies: {}
+    Info_55:
+      Name: "ui/sprites/\u5173\u5361\u9009\u62E9-\u5F85\u89E3\u9501"
+      Dependencies: {}
+    Info_56:
+      Name: "ui/sprites/\u5973\u5DEB\u7684\u9B54\u6CD5\u8721\u70DB \u6682\u505C"
+      Dependencies: {}
+    Info_57:
+      Name: "ui/sprites/\u5973\u5DEB\u7684\u9B54\u6CD5\u8721\u70DB \u7ED3\u7B971"
+      Dependencies: {}
+    Info_58:
+      Name: "ui/sprites/\u5973\u5DEB\u7684\u9B54\u6CD5\u8721\u70DB \u7ED3\u7B972"
+      Dependencies: {}
+    Info_59:
+      Name: "ui/sprites/\u5973\u5DEB\u7684\u9B54\u6CD5\u8721\u70DB \u8BBE\u7F6E\u548C\u6682\u505C"
+      Dependencies: {}
+    Info_60:
+      Name: gameplay/scene/prefabs/moveplatform
+      Dependencies:
+        Dependency_0: gameplay/map/map_base_02
+        Dependency_1: gameplay/map/map_base_05
+        Dependency_2: gameplay/map/map_base_08
+        Dependency_3: gameplay/map/platform
+    Info_61:
+      Name: ui/sprites/common/common_icon_bofang
+      Dependencies: {}
+    Info_62:
+      Name: ui/sprites/common/common_icon_shezhi
+      Dependencies: {}
+    Info_63:
+      Name: ui/sprites/common/common_icon_zanting
+      Dependencies: {}
+    Info_64:
+      Name: ui/sprites/common/common_mask
+      Dependencies: {}
+    Info_65:
+      Name: ui/sprites/fengmian/fengmian_bg
+      Dependencies: {}
+    Info_66:
+      Name: ui/sprites/jiesuan/jiesuan_card_01
+      Dependencies: {}
+    Info_67:
+      Name: ui/sprites/jiesuan/jiesuan_card_02
+      Dependencies: {}
+    Info_68:
+      Name: ui/sprites/jiesuan/jiesuan_star_01
+      Dependencies: {}
+    Info_69:
+      Name: ui/sprites/jiesuan/jiesuan_star_02
+      Dependencies: {}
+    Info_70:
+      Name: "ui/sprites/jiesuan/\u7ED3\u7B97-\u6807\u6CE81"
+      Dependencies: {}
+    Info_71:
+      Name: "ui/sprites/jiesuan/\u7ED3\u7B97-\u6807\u6CE82"
+      Dependencies: {}
+    Info_72:
+      Name: ui/sprites/xuanze/xuanze_bg
+      Dependencies: {}
+    Info_73:
+      Name: ui/sprites/xuanze/xuanze_guanqian_01
+      Dependencies: {}
+    Info_74:
+      Name: ui/sprites/xuanze/xuanze_guanqian_02
+      Dependencies: {}
+    Info_75:
+      Name: ui/sprites/xuanze/xuanze_jiantou
+      Dependencies: {}
+    Info_76:
+      Name: "ui/sprites/xuanze/\u5173\u5361\u9009\u62E9-\u6807\u6CE8"
+      Dependencies: {}
+    Info_77:
+      Name: "ui/sprites/xuanze/\u5173\u5361\u9009\u62E9-\u6807\u6CE82"
+      Dependencies: {}
+    Info_78:
+      Name: "ui/sprites/zanting/\u6682\u505C-\u6807\u6CE8"
+      Dependencies: {}
+    Info_79:
+      Name: ui/sprites/common/common_icon_xuanzhong
+      Dependencies: {}
+    Info_80:
+      Name: ui/prefabs/uilevel
+      Dependencies:
+        Dependency_0: ui/fonts/cn sdf
+        Dependency_1: ui/sprites/common/common_icon_bofang
+        Dependency_2: ui/sprites/common/common_icon_shezhi
+        Dependency_3: ui/sprites/common/common_icon_zanting
+        Dependency_4: ui/sprites/common/common_mask
+        Dependency_5: ui/sprites/jiesuan/jiesuan_card_01
+    Info_81:
+      Name: ui/prefabs/uimain
+      Dependencies:
+        Dependency_0: ui/fonts/cn sdf
+        Dependency_1: ui/sprites/fengmian/fengmian_bg
+    Info_82:
+      Name: config/binconfigdata/localizedstrings
+      Dependencies: {}
+    Info_83:
+      Name: config/binconfigdata/sheet1
+      Dependencies: {}
+    Info_84:
+      Name: config/binconfigdata/sheet2
       Dependencies: {}
