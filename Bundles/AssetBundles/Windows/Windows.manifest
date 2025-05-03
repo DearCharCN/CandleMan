@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1307100209
+CRC: 3856352806
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -286,17 +286,18 @@ AssetBundleManifest:
       Name: ui/prefabs/uilevel
       Dependencies:
         Dependency_0: ui/fonts/cn sdf
-        Dependency_1: ui/sprites/common/common_icon_bofang
-        Dependency_2: ui/sprites/common/common_icon_shezhi
-        Dependency_3: ui/sprites/common/common_icon_zanting
-        Dependency_4: ui/sprites/common/common_mask
-        Dependency_5: ui/sprites/jiesuan/jiesuan_card_01
-        Dependency_6: ui/sprites/jiesuan/jiesuan_card_02
-        Dependency_7: ui/sprites/jiesuan/jiesuan_star_01
-        Dependency_8: ui/sprites/xuanze/xuanze_bg
-        Dependency_9: ui/sprites/xuanze/xuanze_guanqian_01
-        Dependency_10: ui/sprites/xuanze/xuanze_guanqian_02
-        Dependency_11: ui/sprites/xuanze/xuanze_jiantou
+        Dependency_1: ui/fonts/num sdf
+        Dependency_2: ui/sprites/common/common_icon_bofang
+        Dependency_3: ui/sprites/common/common_icon_shezhi
+        Dependency_4: ui/sprites/common/common_icon_zanting
+        Dependency_5: ui/sprites/common/common_mask
+        Dependency_6: ui/sprites/jiesuan/jiesuan_card_01
+        Dependency_7: ui/sprites/jiesuan/jiesuan_card_02
+        Dependency_8: ui/sprites/jiesuan/jiesuan_star_01
+        Dependency_9: ui/sprites/xuanze/xuanze_bg
+        Dependency_10: ui/sprites/xuanze/xuanze_guanqian_01
+        Dependency_11: ui/sprites/xuanze/xuanze_guanqian_02
+        Dependency_12: ui/sprites/xuanze/xuanze_jiantou
     Info_70:
       Name: ui/prefabs/uimain
       Dependencies:

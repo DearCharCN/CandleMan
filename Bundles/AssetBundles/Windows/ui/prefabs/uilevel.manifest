@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3876137291
+CRC: 3421965668
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 7c532bc45135a8a5dba3afd82be91907
+    Hash: 4d6c50252b7bb5843000ec23ce682f45
   TypeTreeHash:
     serializedVersion: 2
     Hash: 982e67ecfd34a39b1525e4f7d54145c0
@@ -62,6 +62,8 @@ Assets:
 - Assets/AssetBundles/UI/Prefabs/UILevelSelect.prefab
 Dependencies:
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/ui/fonts/cn
+  sdf
+- D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/ui/fonts/num
   sdf
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/ui/sprites/common/common_icon_bofang
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/ui/sprites/common/common_icon_shezhi
