@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 280629758
+CRC: 3358884845
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: c26de2d2089f1b85ef07e9a549c2dd65
+    Hash: cf053e5f9aff3a370c007743785f5edb
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 0614a8e0fe3636bf86cad4b097189980
+    Hash: f6aef5ddc9acdda2f2c36ac63a418940
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -88,11 +88,11 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: fa7155796051b734daa718462081dc5f, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 8f968a64f7882d94cbcfc28b7dc54785, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: af7181f404f1447c0a7a17b3070b952b, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 10de35c06bd446e4d83ce130b7df02cc, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 8f968a64f7882d94cbcfc28b7dc54785, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 128
@@ -125,8 +125,6 @@ SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/AssetBundles/GamePlay/Scene/1.unity
 Dependencies:
-- D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/background/map_bg_00000
-- D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/background/map_bg_01101
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/background/map_bg_01201
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/background/map_bg_01202
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/background/map_bg_01203
@@ -146,3 +144,4 @@ Dependencies:
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/scene/prefabs/character
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/scene/prefabs/finalpoint
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/scene/prefabs/moveplatform
+- D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/scene/prefabs/sceneroot

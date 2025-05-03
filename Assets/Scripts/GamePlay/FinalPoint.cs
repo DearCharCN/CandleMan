@@ -51,6 +51,7 @@ public class FinalPoint : MonoBehaviour,IInteractable
 
     public void OnInteractiveAction()
     {
+        LevelSceneMgr.SetPassLevel(LevelSceneMgr.CurrentScene.Level);
         LevelSceneMgr.CurrentScene.LoadNestScene();
     }
 

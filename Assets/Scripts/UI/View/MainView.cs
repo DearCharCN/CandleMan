@@ -1,6 +1,7 @@
 using UnityEngine;
 using F8Framework.Core;
 using UnityEngine.EventSystems;
+using F8Framework.Launcher;
 
 public class MainView : BaseView
 {
@@ -82,7 +83,7 @@ public class MainView : BaseView
 
     private void OnClickSetting(BaseEventData baseEventData)
     {
-        LogF8.Log("未实现设置功能");
+        FF8.UI.Open(UIID.UILevelSelect);
     }
 
     private void OnClickExit(BaseEventData baseEventData)

@@ -121,6 +121,7 @@ namespace GamePlay
                     return true;
                 }
             }
+            TryDisconnectPlatform();
             return false;
         }
 

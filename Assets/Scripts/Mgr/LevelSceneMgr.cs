@@ -131,6 +131,21 @@ public class LevelSceneMgr : MonoBehaviour
         Character.Init(characterConfig);
         Character.transform.position = characterPos + Vector3.up * halfLen + Vector3.up * 0.1f;
     }
+
+    public static void SetPassLevel(int level)
+    {
+        int oldLevel = FF8.Storage.GetInt(StorageKey.LEVEL_PASS_KEY);
+        if (oldLevel < level)
+        {
+            FF8.Storage.SetInt(StorageKey.LEVEL_PASS_KEY, level);
+            FF8.Storage.Save();
+        }
+    }
+
+    public static int GetMaxLevel()
+    {
+        return SceneManager.sceneCountInBuildSettings - 2;
+    }
 }
 
 public enum LevelEvent
