@@ -12660,6 +12660,14 @@ PrefabInstance:
       propertyPath: text
       value: "\u4F60\u597D\uFF01\n\u6211\u662F\u5927\u50BB\u903C"
       objectReference: {fileID: 0}
+    - target: {fileID: 6908305572648020998, guid: 36e296f28d02dc14180aa6b7a946b588, type: 3}
+      propertyPath: contents.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6908305572648020998, guid: 36e296f28d02dc14180aa6b7a946b588, type: 3}
+      propertyPath: contents.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6908305572648021003, guid: 36e296f28d02dc14180aa6b7a946b588, type: 3}
       propertyPath: m_Name
       value: storyTrigger
