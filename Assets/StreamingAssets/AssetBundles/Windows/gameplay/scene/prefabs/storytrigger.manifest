@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 1101537303
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 72d696226184c8a055676c20145cf875
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ec91b6fccbc926fa2adbf42cb17a8600
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 61
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9b7d1e8aff6bc954383651e9a5a311de, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundles/GamePlay/Scene/Prefabs/storyTrigger.prefab
+Dependencies: []

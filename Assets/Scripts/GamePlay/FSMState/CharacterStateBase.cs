@@ -76,12 +76,12 @@ namespace GamePlay
 
         private void OnEnable()
         {
-            FF8.Message.AddEventListener(CharacterEvent.OnFixedUpdate, OnCharacterFixedUpdate, this);
+            FF8.Message.AddEventListener(EventEnum.OnFixedUpdate, OnCharacterFixedUpdate, this);
         }
 
         private void OnDisable()
         {
-            FF8.Message.RemoveEventListener(CharacterEvent.OnFixedUpdate, OnCharacterFixedUpdate, this);
+            FF8.Message.RemoveEventListener(EventEnum.OnFixedUpdate, OnCharacterFixedUpdate, this);
         }
 
         private void OnCharacterFixedUpdate(object[] args)

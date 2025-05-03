@@ -52,7 +52,7 @@ public class FinalPoint : MonoBehaviour,IInteractable
 
     public void OnInteractiveAction()
     {
-        FF8.UI.Open(UIID.IJiesuan);
+        FF8.UI.Open(UIID.UIJiesuan);
     }
 
     public void OnInteractiveEnter()

@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2632528723
+CRC: 2049182845
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 626a3b7c89d6ec527540cf29596817f8
+    Hash: 5d8109c9ed56f5a4116c85d2fbdd119e
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 7bb95ec8158c44cae5d5797092f7ec0d
+    Hash: d1bb2e67309c603898ad779f043f29ed
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -16,8 +16,6 @@ ClassTypes:
 - Class: 21
   Script: {instanceID: 0}
 - Class: 23
-  Script: {instanceID: 0}
-- Class: 28
   Script: {instanceID: 0}
 - Class: 48
   Script: {instanceID: 0}
@@ -64,6 +62,9 @@ Dependencies:
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/character/sprite/candle_shangban_01
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/character/sprite/candle_xiaban_01
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/character/sprite/candle_zhongjian_01
+- D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/prop/common_jiaohukuang
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/scene/prefabs/defaulphysicalmaterial
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/ui/fonts/cn
   sdf
+- D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/ui/fonts/cn
+  sdf_1

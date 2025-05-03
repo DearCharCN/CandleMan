@@ -1,6 +1,7 @@
 using F8Framework.Core;
 using F8Framework.Launcher;
 using GamePlay;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -48,6 +49,8 @@ public class LevelSceneMgr : MonoBehaviour
 
         if (CurrentScene == this)
             CurrentScene = null;
+
+        ResumeState();
     }
 
     static public void LoadScene(int level)
@@ -55,7 +58,7 @@ public class LevelSceneMgr : MonoBehaviour
         FF8.GameObjectPool.DespawnAllClone();
         SceneManager.LoadScene(level.ToString());
         FF8.UI.Close(UIID.UIMain);
-        FF8.UI.Close(UIID.IJiesuan);
+        FF8.UI.Close(UIID.UIJiesuan);
     }
 
     static public void BackToMain()
@@ -63,7 +66,7 @@ public class LevelSceneMgr : MonoBehaviour
         FF8.GameObjectPool.DespawnAllClone();
         SceneManager.LoadScene("main");
         FF8.UI.Close(UIID.UILevel);
-        FF8.UI.Close(UIID.IJiesuan);
+        FF8.UI.Close(UIID.UIJiesuan);
     }
 
     public void LoadNestScene()
@@ -75,7 +78,7 @@ public class LevelSceneMgr : MonoBehaviour
     {
         Character = character;
         Character.Init(config);
-        FF8.Message.DispatchEvent(LevelEvent.OnCharacterInited);
+        FF8.Message.DispatchEvent(EventEnum.OnCharacterInited);
     }
 
     public void ChangedCharacter(CharacterConfig config, Vector3 position)
@@ -176,11 +179,31 @@ public class LevelSceneMgr : MonoBehaviour
         else
             return LevelPassType.Perfect;
     }
-}
 
-public enum LevelEvent
-{
-    OnCharacterInited,
+    public static bool IsPause { get; private set; } = false;
+
+
+    public static void PauseState()
+    {
+        if (IsPause)
+            return;
+
+        IsPause = true;
+        Time.timeScale = 0f;
+
+        FF8.Message.DispatchEvent(EventEnum.OnPauseOrResume);
+    }
+
+    public static void ResumeState()
+    {
+        if (!IsPause)
+            return;
+
+        IsPause = false;
+        Time.timeScale = 1f;
+
+        FF8.Message.DispatchEvent(EventEnum.OnPauseOrResume);
+    }
 }
 
 public enum LevelPassType

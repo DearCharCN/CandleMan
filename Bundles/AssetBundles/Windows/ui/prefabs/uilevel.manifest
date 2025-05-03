@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2418955665
+CRC: 286778305
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 98b14556e9c23bfa0bce8c15ad923f31
+    Hash: 1613fd87c6dac0f34e5753d475332ed9
   TypeTreeHash:
     serializedVersion: 2
-    Hash: a70ed392ed428d34cb1b6e3d37bb8469
+    Hash: aca64c5fcf774baec6ed64a382b7ccf2
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -16,9 +16,15 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: a323cc256a5942a43a917f9faed56ab6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 96c8e48719ed03f42a88771de5963e39, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
 - Class: 114
@@ -26,11 +32,13 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 923b5365b729b2c438234b07900f2010, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 30472b1445ec4ad4fabe212bcf58b3f9, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 96c8e48719ed03f42a88771de5963e39, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: 4744f2fcd057fe94bb22d80696186ba3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d90025e341d4759428a3861788ea36fb, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 213
@@ -44,6 +52,8 @@ SerializeReferenceClassIdentifiers:
   ClassName: TMPro.VertexGradient
 - AssemblyName: UnityEngine.CoreModule
   ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.RectOffset
 - AssemblyName: UnityEngine.UI
   ClassName: UnityEngine.UI.AnimationTriggers
 - AssemblyName: UnityEngine.UI
@@ -57,18 +67,24 @@ SerializeReferenceClassIdentifiers:
 - AssemblyName: UnityEngine.UI
   ClassName: UnityEngine.UI.SpriteState
 Assets:
+- Assets/AssetBundles/UI/Prefabs/UIDialog.prefab
 - Assets/AssetBundles/UI/Prefabs/UIJiesuan.prefab
 - Assets/AssetBundles/UI/Prefabs/UILevel.prefab
 - Assets/AssetBundles/UI/Prefabs/UILevelSelect.prefab
 Dependencies:
+- D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/prop/common_jiaohukuang
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/ui/fonts/cn
   sdf
+- D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/ui/fonts/cn
+  sdf_1
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/ui/fonts/num
   sdf
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/ui/sprites/common/common_icon_bofang
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/ui/sprites/common/common_icon_shezhi
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/ui/sprites/common/common_icon_zanting
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/ui/sprites/common/common_mask
+- D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/ui/sprites/dialog/common_duihuakuang_01
+- D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/ui/sprites/dialog/common_duihuakuang_02
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/ui/sprites/jiesuan/jiesuan_card_01
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/ui/sprites/jiesuan/jiesuan_card_02
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/ui/sprites/jiesuan/jiesuan_star_01

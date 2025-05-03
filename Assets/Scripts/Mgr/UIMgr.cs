@@ -10,7 +10,8 @@ public enum UIID
     UIMain = 1, // 游戏主界面
     UILevel = 2,// 关卡界面
     UILevelSelect = 3,//关卡选择
-    IJiesuan = 4,//关卡结算
+    UIJiesuan = 4,//关卡结算
+    UIDialog = 5,//对话界面
 }
 public class UIMgr
 {
@@ -20,7 +21,9 @@ public class UIMgr
         { UIID.UIMain, new UIConfig(LayerType.UI, "UIMain") }, // 手动添加UI配置
         { UIID.UILevel, new UIConfig(LayerType.UI, "UILevel") },
         { UIID.UILevelSelect, new UIConfig(LayerType.UI, "UILevelSelect") },
-        { UIID.IJiesuan, new UIConfig(LayerType.UI, "UIJiesuan") }
+        { UIID.UIJiesuan, new UIConfig(LayerType.UI, "UIJiesuan") },
+        { UIID.UIDialog, new UIConfig(LayerType.UI, "UIDialog") }
+        
     };
     public static void Init()
     {

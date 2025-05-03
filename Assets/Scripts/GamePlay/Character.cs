@@ -168,7 +168,7 @@ namespace GamePlay
 
         private void FixedUpdate()
         {
-            FF8.Message.DispatchEvent(CharacterEvent.OnFixedUpdate, this);
+            FF8.Message.DispatchEvent(EventEnum.OnFixedUpdate, this);
         }
 
         private void UpdateBurning()
@@ -183,7 +183,7 @@ namespace GamePlay
 
             if (IsDead)
             {
-                FF8.Message.DispatchEvent(CharacterEvent.Dead);
+                FF8.Message.DispatchEvent(EventEnum.Dead);
             }
         }
 
@@ -191,11 +191,5 @@ namespace GamePlay
         {
             candleBody.SetLength(runTimeLength);
         }
-    }
-
-    public enum CharacterEvent
-    {
-        OnFixedUpdate,
-        Dead,
     }
 }

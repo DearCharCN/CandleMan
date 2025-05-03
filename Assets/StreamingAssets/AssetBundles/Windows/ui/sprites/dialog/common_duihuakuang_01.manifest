@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 1618348498
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4839c0c2dc9b81a41f5f0acd22b32e13
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f267fd2d8bcb1179236b6179ac5313bc
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundles/UI/Sprites/dialog/common_duihuakuang_01.png
+Dependencies: []

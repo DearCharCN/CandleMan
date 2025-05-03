@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1717753722
+CRC: 1208672387
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -83,6 +83,7 @@ AssetBundleManifest:
         Dependency_17: gameplay/scene/prefabs/body
         Dependency_18: gameplay/scene/prefabs/moveplatform
         Dependency_19: gameplay/scene/prefabs/sceneroot
+        Dependency_20: gameplay/scene/prefabs/storytrigger
     Info_16:
       Name: gameplay/scene/2
       Dependencies:
@@ -158,6 +159,8 @@ AssetBundleManifest:
         Dependency_0: ui/fonts/cn sdf
         Dependency_1: gameplay/prop/keshoujiwu
         Dependency_2: gameplay/prop/zhongdian
+        Dependency_3: gameplay/prop/common_jiaohukuang
+        Dependency_4: ui/fonts/cn sdf_1
     Info_33:
       Name: gameplay/background/map_bg_00000
       Dependencies: {}
@@ -189,12 +192,6 @@ AssetBundleManifest:
       Name: gameplay/background/map_bg_02101
       Dependencies: {}
     Info_43:
-      Name: "gameplay/background/\u5173\u53611\u793A\u610F"
-      Dependencies: {}
-    Info_44:
-      Name: "gameplay/background/\u5173\u53612\u793A\u610F \u5C40\u90E8"
-      Dependencies: {}
-    Info_45:
       Name: gameplay/scene/prefabs/body
       Dependencies:
         Dependency_0: gameplay/character/characterfsm
@@ -204,87 +201,89 @@ AssetBundleManifest:
         Dependency_4: gameplay/character/sprite/candle_zhongjian_01
         Dependency_5: gameplay/scene/prefabs/defaulphysicalmaterial
         Dependency_6: ui/fonts/cn sdf
-    Info_46:
+        Dependency_7: gameplay/prop/common_jiaohukuang
+        Dependency_8: ui/fonts/cn sdf_1
+    Info_44:
       Name: gameplay/scene/prefabs/bodypool
       Dependencies:
         Dependency_0: gameplay/scene/prefabs/body
-    Info_47:
+    Info_45:
       Name: gameplay/scene/prefabs/characterpool
       Dependencies:
         Dependency_0: gameplay/scene/prefabs/character
-    Info_48:
+    Info_46:
       Name: gameplay/scene/prefabs/defaulphysicalmaterial
       Dependencies: {}
-    Info_49:
+    Info_47:
       Name: gameplay/map/platform
       Dependencies:
         Dependency_0: gameplay/map/map_base_02
         Dependency_1: gameplay/map/map_base_05
         Dependency_2: gameplay/map/map_base_08
-    Info_50:
+    Info_48:
       Name: ui/fonts/cn sdf
       Dependencies:
         Dependency_0: ui/fonts/cn
-    Info_51:
+    Info_49:
       Name: ui/fonts/cn
       Dependencies: {}
-    Info_52:
+    Info_50:
       Name: ui/fonts/num sdf
       Dependencies:
         Dependency_0: ui/fonts/num
-    Info_53:
+    Info_51:
       Name: ui/fonts/num
       Dependencies: {}
-    Info_54:
+    Info_52:
       Name: gameplay/scene/prefabs/moveplatform
       Dependencies:
         Dependency_0: gameplay/map/map_base_02
         Dependency_1: gameplay/map/map_base_05
         Dependency_2: gameplay/map/map_base_08
         Dependency_3: gameplay/map/platform
-    Info_55:
+    Info_53:
       Name: ui/sprites/common/common_icon_bofang
       Dependencies: {}
-    Info_56:
+    Info_54:
       Name: ui/sprites/common/common_icon_shezhi
       Dependencies: {}
-    Info_57:
+    Info_55:
       Name: ui/sprites/common/common_icon_zanting
       Dependencies: {}
-    Info_58:
+    Info_56:
       Name: ui/sprites/common/common_mask
       Dependencies: {}
-    Info_59:
+    Info_57:
       Name: ui/sprites/fengmian/fengmian_bg
       Dependencies: {}
-    Info_60:
+    Info_58:
       Name: ui/sprites/jiesuan/jiesuan_card_01
       Dependencies: {}
-    Info_61:
+    Info_59:
       Name: ui/sprites/jiesuan/jiesuan_card_02
       Dependencies: {}
-    Info_62:
+    Info_60:
       Name: ui/sprites/jiesuan/jiesuan_star_01
       Dependencies: {}
-    Info_63:
+    Info_61:
       Name: ui/sprites/jiesuan/jiesuan_star_02
       Dependencies: {}
-    Info_64:
+    Info_62:
       Name: ui/sprites/xuanze/xuanze_bg
       Dependencies: {}
-    Info_65:
+    Info_63:
       Name: ui/sprites/xuanze/xuanze_guanqian_01
       Dependencies: {}
-    Info_66:
+    Info_64:
       Name: ui/sprites/xuanze/xuanze_guanqian_02
       Dependencies: {}
-    Info_67:
+    Info_65:
       Name: ui/sprites/xuanze/xuanze_jiantou
       Dependencies: {}
-    Info_68:
+    Info_66:
       Name: ui/sprites/common/common_icon_xuanzhong
       Dependencies: {}
-    Info_69:
+    Info_67:
       Name: ui/prefabs/uilevel
       Dependencies:
         Dependency_0: ui/fonts/cn sdf
@@ -301,12 +300,16 @@ AssetBundleManifest:
         Dependency_11: ui/sprites/xuanze/xuanze_guanqian_01
         Dependency_12: ui/sprites/xuanze/xuanze_guanqian_02
         Dependency_13: ui/sprites/xuanze/xuanze_jiantou
-    Info_70:
+        Dependency_14: gameplay/prop/common_jiaohukuang
+        Dependency_15: ui/fonts/cn sdf_1
+        Dependency_16: ui/sprites/dialog/common_duihuakuang_01
+        Dependency_17: ui/sprites/dialog/common_duihuakuang_02
+    Info_68:
       Name: ui/prefabs/uimain
       Dependencies:
         Dependency_0: ui/fonts/cn sdf
         Dependency_1: ui/sprites/fengmian/fengmian_bg
-    Info_71:
+    Info_69:
       Name: gameplay/scene/3
       Dependencies:
         Dependency_0: gameplay/map/map_base_01
@@ -322,23 +325,39 @@ AssetBundleManifest:
         Dependency_10: gameplay/scene/prefabs/finalpoint
         Dependency_11: gameplay/scene/prefabs/body
         Dependency_12: gameplay/scene/prefabs/sceneroot
-    Info_72:
+    Info_70:
       Name: gameplay/scene/prefabs/sceneroot
       Dependencies:
         Dependency_0: gameplay/background/map_bg_00000
         Dependency_1: gameplay/background/map_bg_01101
-    Info_73:
-      Name: config/binconfigdata/localizedstrings
-      Dependencies: {}
-    Info_74:
-      Name: config/binconfigdata/sheet1
-      Dependencies: {}
-    Info_75:
-      Name: config/binconfigdata/sheet2
-      Dependencies: {}
-    Info_76:
+    Info_71:
       Name: gameplay/prop/keshoujiwu
       Dependencies: {}
-    Info_77:
+    Info_72:
       Name: gameplay/prop/zhongdian
+      Dependencies: {}
+    Info_73:
+      Name: gameplay/prop/common_jiaohukuang
+      Dependencies: {}
+    Info_74:
+      Name: ui/fonts/cn sdf_1
+      Dependencies:
+        Dependency_0: ui/fonts/cn sdf
+    Info_75:
+      Name: config/binconfigdata/localizedstrings
+      Dependencies: {}
+    Info_76:
+      Name: config/binconfigdata/sheet1
+      Dependencies: {}
+    Info_77:
+      Name: config/binconfigdata/sheet2
+      Dependencies: {}
+    Info_78:
+      Name: gameplay/scene/prefabs/storytrigger
+      Dependencies: {}
+    Info_79:
+      Name: ui/sprites/dialog/common_duihuakuang_01
+      Dependencies: {}
+    Info_80:
+      Name: ui/sprites/dialog/common_duihuakuang_02
       Dependencies: {}

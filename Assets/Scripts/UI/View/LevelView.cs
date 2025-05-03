@@ -2,7 +2,6 @@ using UnityEngine;
 using F8Framework.Core;
 using TMPro;
 using F8Framework.Launcher;
-using GamePlay;
 using UnityEngine.EventSystems;
 using UI;
 
@@ -36,7 +35,7 @@ public class LevelView : BaseView
         deadPanel.SetActive(false);
         pausePanel.SetActive(false);
         pauseSwitch.Switch(0);
-        FF8.Message.AddEventListener(CharacterEvent.Dead, OnPlayerDead, this);
+        FF8.Message.AddEventListener(EventEnum.Dead, OnPlayerDead, this);
     }
     
     // Start
@@ -65,7 +64,7 @@ public class LevelView : BaseView
     // 删除之前，每次UI关闭前调用
     protected override void OnBeforeRemove()
     {
-        FF8.Message.RemoveEventListener(CharacterEvent.Dead, OnPlayerDead, this);
+        FF8.Message.RemoveEventListener(EventEnum.Dead, OnPlayerDead, this);
     }
     
     // 删除，UI关闭后调用
@@ -119,12 +118,14 @@ public class LevelView : BaseView
     {
         pausePanel.SetActive(true);
         pauseSwitch.Switch(1);
+        LevelSceneMgr.PauseState();
     }
 
     private void OnClickContinue(BaseEventData baseEventData)
     {
         pausePanel.SetActive(false);
         pauseSwitch.Switch(0);
+        LevelSceneMgr.ResumeState();
     }
 
     private void OnPlayerDead()
