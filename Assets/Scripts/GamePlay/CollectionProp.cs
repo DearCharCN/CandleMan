@@ -2,17 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollectionProp : MonoBehaviour
+namespace GamePlay
 {
-    // Start is called before the first frame update
-    void Start()
+    public class CollectionProp : MonoBehaviour
     {
-        
-    }
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision == null)
+                return;
+            if (collision.gameObject.tag == CharacterFSMConst.PlayerTag)
+            {
+                OnEnterPlayer();
+            }
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        private void OnEnterPlayer()
+        {
+            gameObject.SetActive(false);
+            LevelSceneMgr.CurrentScene.AddCollectionCount();
+        }
     }
 }

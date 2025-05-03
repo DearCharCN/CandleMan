@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 4108168986
+CRC: 3209365704
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: bcb88248dea1b13d3612b4e6caaa85ac
+    Hash: 18e2b4685f9b0c7da24f2081f8f7b205
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 7121f177d0e864f2e90b56c9d2ccddad
+    Hash: b4ed7e468499650b899eb007cd16bed6
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -29,6 +29,8 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ca7ba5e2017201f42bdc11dcf843a25b, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 212
@@ -46,6 +48,7 @@ SerializeReferenceClassIdentifiers:
   ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
 Assets:
 - Assets/AssetBundles/GamePlay/Scene/Prefabs/finalPoint.prefab
+- Assets/AssetBundles/GamePlay/Scene/Prefabs/collectionProp.prefab
 Dependencies:
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/ui/fonts/cn
   sdf

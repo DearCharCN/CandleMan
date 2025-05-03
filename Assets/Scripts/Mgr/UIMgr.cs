@@ -20,7 +20,7 @@ public class UIMgr
         { UIID.UIMain, new UIConfig(LayerType.UI, "UIMain") }, //  ÷∂ØÃÌº”UI≈‰÷√
         { UIID.UILevel, new UIConfig(LayerType.UI, "UILevel") },
         { UIID.UILevelSelect, new UIConfig(LayerType.UI, "UILevelSelect") },
-        { UIID.IJiesuan, new UIConfig(LayerType.UI, "IJiesuan") }
+        { UIID.IJiesuan, new UIConfig(LayerType.UI, "UIJiesuan") }
     };
     public static void Init()
     {

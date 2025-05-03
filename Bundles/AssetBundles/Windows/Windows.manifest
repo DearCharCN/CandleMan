@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1343389869
+CRC: 1358784493
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -294,10 +294,11 @@ AssetBundleManifest:
         Dependency_6: ui/sprites/jiesuan/jiesuan_card_01
         Dependency_7: ui/sprites/jiesuan/jiesuan_card_02
         Dependency_8: ui/sprites/jiesuan/jiesuan_star_01
-        Dependency_9: ui/sprites/xuanze/xuanze_bg
-        Dependency_10: ui/sprites/xuanze/xuanze_guanqian_01
-        Dependency_11: ui/sprites/xuanze/xuanze_guanqian_02
-        Dependency_12: ui/sprites/xuanze/xuanze_jiantou
+        Dependency_9: ui/sprites/jiesuan/jiesuan_star_02
+        Dependency_10: ui/sprites/xuanze/xuanze_bg
+        Dependency_11: ui/sprites/xuanze/xuanze_guanqian_01
+        Dependency_12: ui/sprites/xuanze/xuanze_guanqian_02
+        Dependency_13: ui/sprites/xuanze/xuanze_jiantou
     Info_70:
       Name: ui/prefabs/uimain
       Dependencies:

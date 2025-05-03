@@ -4,9 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using F8Framework.Core;
 using UnityEngine.EventSystems;
+using UI;
 
 public class JiesuanView : BaseView
 {
+    [SerializeField]
+    ImageSwitch[] stars;
+    [SerializeField]
+    GameObject tipsGo;
+
     // Awake
     protected override void OnAwake()
     {
@@ -69,6 +75,41 @@ public class JiesuanView : BaseView
 
     private void UpdateUI()
     {
+        LevelPassType levelPassType = LevelSceneMgr.CurrentScene.GetPassType();
+        switch (levelPassType)
+        {
+            case LevelPassType.Pass:
+                {
+                    stars[0].Switch(1);
+                    stars[1].Switch(1);
+                    stars[2].Switch(1);
+                    break;
+                }
+            case LevelPassType.Good:
+                {
+                    stars[0].Switch(0);
+                    stars[1].Switch(1);
+                    stars[2].Switch(1);
+                    break;
+                }
+            case LevelPassType.Excelent:
+                {
+                    stars[0].Switch(0);
+                    stars[1].Switch(0);
+                    stars[2].Switch(1);
+                    break;
+                }
+            case LevelPassType.Perfect:
+                {
+                    stars[0].Switch(0);
+                    stars[1].Switch(0);
+                    stars[2].Switch(0);
+                    break;
+                }
+        }
+
+        bool tipsActive = levelPassType != LevelPassType.Perfect;
+        tipsGo.SetActive(tipsActive);
         bool isFinalLv = CheckIsFinalLv();
         if (isFinalLv)
         {

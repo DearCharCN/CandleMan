@@ -23,6 +23,9 @@ public class LevelSceneMgr : MonoBehaviour
         InitCharacter(FindAnyObjectByType<Character>());
 
         CurrentScene = this;
+
+        SearchAllCollection();
+
         FF8.UI.Close(UIID.UILevel);
         FF8.UI.Open(UIID.UILevel, new object[]
         {
@@ -140,9 +143,50 @@ public class LevelSceneMgr : MonoBehaviour
     {
         return SceneManager.sceneCountInBuildSettings - 2;
     }
+    int CollectionSum;
+
+    private void SearchAllCollection()
+    {
+        var objs =  GameObject.FindObjectsByType(typeof(CollectionProp), FindObjectsSortMode.InstanceID);
+        CollectionSum = objs.Length;
+    }
+
+    int _collectionCount = 0;
+    public void AddCollectionCount()
+    {
+        ++_collectionCount;
+    }
+
+    public LevelPassType GetPassType()
+    {
+        float left = (float)_collectionCount;
+        float right = (float)CollectionSum;
+        float rate = 1;
+        if (right != 0)
+        {
+            rate = left / right;
+            rate = Mathf.Clamp01(rate);
+        }
+        if(rate < 0.3f)
+            return LevelPassType.Pass;
+        else if (rate < 0.5f)
+            return LevelPassType.Good;
+        else if (rate < 1f)
+            return LevelPassType.Excelent;
+        else
+            return LevelPassType.Perfect;
+    }
 }
 
 public enum LevelEvent
 {
     OnCharacterInited,
+}
+
+public enum LevelPassType
+{
+    Pass,
+    Good,
+    Excelent,
+    Perfect,
 }
