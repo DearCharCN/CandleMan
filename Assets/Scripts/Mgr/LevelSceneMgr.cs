@@ -1,3 +1,4 @@
+using F8Framework.Core;
 using F8Framework.Launcher;
 using GamePlay;
 using UnityEngine;
@@ -34,7 +35,7 @@ public class LevelSceneMgr : MonoBehaviour
 
     private void OnDestroy()
     {
-        TryDewstroyCharacter();
+        TryDestroyCharacter();
 
         if (Interactive != null)
         {
@@ -53,6 +54,13 @@ public class LevelSceneMgr : MonoBehaviour
         FF8.UI.Close(UIID.UIMain);
     }
 
+    static public void FakeLoadScene(int level)
+    {
+        FF8.GameObjectPool.DespawnAllClone();
+        SceneManager.LoadScene(level.ToString());
+        FF8.UI.Close(UIID.UIMain);
+    }
+
     static public void BackToMain()
     {
         FF8.GameObjectPool.DespawnAllClone();
@@ -63,15 +71,6 @@ public class LevelSceneMgr : MonoBehaviour
     public void LoadNestScene()
     {
         LoadScene(Level + 1);
-    }
-
-    private void TryDewstroyCharacter()
-    {
-        if (Character != null)
-        {
-            Destroy(Character.gameObject);
-            Character = null;
-        }
     }
 
     private void InitCharacter(Character character, CharacterConfig? config = null)

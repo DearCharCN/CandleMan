@@ -49,7 +49,7 @@ MonoBehaviour:
   _despawnType: 2
   _capacity: 32
   _preloadType: 2
-  _preloadSize: 16
+  _preloadSize: 2
   _callbacksType: 0
   _dontDestroyOnLoad: 1
   _sendWarnings: 0

@@ -134,7 +134,8 @@ public class LevelView : BaseView
 
     private void OnClickRestart(BaseEventData baseEventData)
     {
-        LevelSceneMgr.LoadScene(LevelSceneMgr.CurrentScene.Level);
+        
+        LevelSceneMgr.FakeLoadScene(LevelSceneMgr.CurrentScene.Level);
     }
 }
 

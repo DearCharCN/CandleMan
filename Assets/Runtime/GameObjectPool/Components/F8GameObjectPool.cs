@@ -565,6 +565,11 @@ namespace F8Framework.Core
 
         internal void Get(out GettingPoolableArguments arguments)
         {
+            if (_despawnedPoolables._count > 0 && _despawnedPoolables._components[0] == null)
+            {
+                
+            }
+
             if (_despawnedPoolables._count <= 0)
             {
                 if (_allClonesCount >= _capacity)
