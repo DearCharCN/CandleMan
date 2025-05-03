@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1358784493
+CRC: 1717753722
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -156,6 +156,8 @@ AssetBundleManifest:
       Name: gameplay/scene/prefabs/finalpoint
       Dependencies:
         Dependency_0: ui/fonts/cn sdf
+        Dependency_1: gameplay/prop/keshoujiwu
+        Dependency_2: gameplay/prop/zhongdian
     Info_33:
       Name: gameplay/background/map_bg_00000
       Dependencies: {}
@@ -333,4 +335,10 @@ AssetBundleManifest:
       Dependencies: {}
     Info_75:
       Name: config/binconfigdata/sheet2
+      Dependencies: {}
+    Info_76:
+      Name: gameplay/prop/keshoujiwu
+      Dependencies: {}
+    Info_77:
+      Name: gameplay/prop/zhongdian
       Dependencies: {}

@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3209365704
+CRC: 2962584674
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 18e2b4685f9b0c7da24f2081f8f7b205
+    Hash: db331de6e1095387a0757b9d78365424
   TypeTreeHash:
     serializedVersion: 2
     Hash: b4ed7e468499650b899eb007cd16bed6
@@ -50,5 +50,7 @@ Assets:
 - Assets/AssetBundles/GamePlay/Scene/Prefabs/finalPoint.prefab
 - Assets/AssetBundles/GamePlay/Scene/Prefabs/collectionProp.prefab
 Dependencies:
+- D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/prop/keshoujiwu
+- D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/prop/zhongdian
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/ui/fonts/cn
   sdf
