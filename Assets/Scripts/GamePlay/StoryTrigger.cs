@@ -7,7 +7,7 @@ namespace GamePlay
     {
         [TextArea]
         [SerializeField]
-        string text;
+        string[] contents;
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
@@ -22,9 +22,11 @@ namespace GamePlay
         private void OnEnterPlayer()
         {
             gameObject.SetActive(false);
+            if (contents == null || contents.Length == 0)
+                return;
             FF8.UI.Open(UIID.UIDialog, new object[]{ new DialogViewArgs()
             {
-                text = text,
+                contents = contents,
             } });
         }
     }

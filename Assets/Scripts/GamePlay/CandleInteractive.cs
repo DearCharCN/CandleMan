@@ -12,6 +12,15 @@ public class CandleInteractive : MonoBehaviour, IInteractable
     [SerializeField]
     GameObject interactiveUI;
 
+
+    [Header("传火时触发对话开关")]
+    [SerializeField]
+    bool openStory;
+    [Header("传火时触发的对话")]
+    [TextArea]
+    [SerializeField]
+    string[] contents;
+
     private void OnEnable()
     {
         interactiveUI.SetActive(false);
@@ -53,15 +62,31 @@ public class CandleInteractive : MonoBehaviour, IInteractable
     {
         if (!interactive)
             return;
+
         if (LevelSceneMgr.CurrentScene.Interactive.Object == this as IInteractable)
             LevelSceneMgr.CurrentScene.Interactive.SetCurrentInteractiveObject(null);
     }
-
     public void OnInteractiveAction()
+    {
+        if (openStory && (contents != null || contents.Length > 0))
+        {
+            FF8.UI.Open(UIID.UIDialog, new object[]{ new DialogViewArgs()
+            {
+                contents = contents,
+            },new System.Action(OnInterac) });
+        }
+        else
+        {
+            OnInterac();
+        }
+    }
+
+    private void OnInterac()
     {
         LevelSceneMgr.CurrentScene.ChangedCharacter(characterConfig, transform.position);
         FF8.GameObjectPool.Despawn(this);
     }
+
 
     public void OnInteractiveEnter()
     {

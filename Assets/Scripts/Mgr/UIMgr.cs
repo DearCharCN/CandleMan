@@ -12,6 +12,7 @@ public enum UIID
     UILevelSelect = 3,//关卡选择
     UIJiesuan = 4,//关卡结算
     UIDialog = 5,//对话界面
+    UIStory = 6,//黑幕剧情
 }
 public class UIMgr
 {
@@ -22,7 +23,8 @@ public class UIMgr
         { UIID.UILevel, new UIConfig(LayerType.UI, "UILevel") },
         { UIID.UILevelSelect, new UIConfig(LayerType.UI, "UILevelSelect") },
         { UIID.UIJiesuan, new UIConfig(LayerType.UI, "UIJiesuan") },
-        { UIID.UIDialog, new UIConfig(LayerType.UI, "UIDialog") }
+        { UIID.UIDialog, new UIConfig(LayerType.UI, "UIDialog") },
+        { UIID.UIStory, new UIConfig(LayerType.UI, "UIStory") }
         
     };
     public static void Init()

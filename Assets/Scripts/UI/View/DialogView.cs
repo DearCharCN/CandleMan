@@ -3,11 +3,17 @@ using UnityEngine.UI;
 using F8Framework.Core;
 using TMPro;
 using F8Framework.Launcher;
+using System;
 
 public class DialogView : BaseView
 {
     [SerializeField]
     TMP_Text text;
+
+
+    DialogViewArgs arg;
+    Action completedCb;
+    int contentIndex = 0;
     // Awake
     protected override void OnAwake()
     {
@@ -17,6 +23,7 @@ public class DialogView : BaseView
     private void CloseSelf()
     {
         FF8.UI.Close(UIID.UIDialog);
+        completedCb?.Invoke();
     }
 
     // 参数传入，每次打开UI都会执行
@@ -24,8 +31,15 @@ public class DialogView : BaseView
     {
         LevelSceneMgr.PauseState();
 
-        DialogViewArgs arg = args[0] as DialogViewArgs;
-        text.text = arg.text;
+        arg = args[0] as DialogViewArgs;
+        contentIndex = 0;
+        completedCb = null;
+
+        if (args.Length > 1)
+            completedCb = args[1] as Action;
+
+        UpdateUI();
+        
     }
     
     // Start
@@ -75,14 +89,32 @@ public class DialogView : BaseView
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            OnNext();
+        }
+    }
+
+    private void OnNext()
+    {
+        ++contentIndex;
+        if (contentIndex >= arg.contents.Length)
         {
             CloseSelf();
         }
+        else
+        {
+            UpdateUI();
+        }
+    }
+
+    private void UpdateUI()
+    {
+        text.text = arg.contents[contentIndex];
     }
 }
 
 public class DialogViewArgs
 {
-    public string text;
+    public string[] contents;
 }

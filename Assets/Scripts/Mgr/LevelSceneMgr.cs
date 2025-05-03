@@ -1,7 +1,6 @@
-using F8Framework.Core;
 using F8Framework.Launcher;
 using GamePlay;
-using UnityEditor;
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,6 +10,14 @@ public class LevelSceneMgr : MonoBehaviour
     int lvId;
     [SerializeField]
     Camera lvCamera;
+
+    [Header("开场黑幕剧情开关")]
+    [SerializeField]
+    bool openStartStory;
+
+    [Header("剧情文本")]
+    [SerializeField]
+    StartStory startStory;
 
     public int Level => lvId;
     public InteractiveModule Interactive { get; private set; }
@@ -35,6 +42,18 @@ public class LevelSceneMgr : MonoBehaviour
                 lvID = lvId,
             }
         });
+
+        if (openStartStory)
+        {
+            FF8.UI.Open(UIID.UIStory, new object[]
+        {
+            new UIStoryViewArg()
+            {
+                contents = startStory.contents
+            }
+        });
+        }
+
     }
 
     private void OnDestroy()
@@ -204,6 +223,13 @@ public class LevelSceneMgr : MonoBehaviour
 
         FF8.Message.DispatchEvent(EventEnum.OnPauseOrResume);
     }
+}
+
+[Serializable]
+public class StartStory
+{
+    [TextArea]
+    public string[] contents;
 }
 
 public enum LevelPassType
