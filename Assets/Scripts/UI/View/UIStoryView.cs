@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using F8Framework.Core;
 using F8Framework.Launcher;
 using TMPro;
+using System;
 
 public class UIStoryView : BaseView
 {
@@ -12,6 +13,7 @@ public class UIStoryView : BaseView
     TMP_Text text;
 
     UIStoryViewArg arg;
+    Action completedCb;
     int contentIndex = 0;
 
     // Awake
@@ -27,6 +29,10 @@ public class UIStoryView : BaseView
 
         arg = args[0] as UIStoryViewArg;
         contentIndex = 0;
+        completedCb = null;
+
+        if (args.Length > 1)
+            completedCb = args[1] as Action;
         UpdateUI();
     }
     
@@ -79,6 +85,7 @@ public class UIStoryView : BaseView
     private void CloseSelf()
     {
         FF8.UI.Close(UIID.UIStory);
+        completedCb?.Invoke();
     }
 
     private void OnNext()

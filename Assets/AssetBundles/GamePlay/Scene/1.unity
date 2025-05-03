@@ -12469,6 +12469,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: finalPoint
       objectReference: {fileID: 0}
+    - target: {fileID: 1367372497107390871, guid: 69d4b98f6cdbd8344babcd780f0b9fb1, type: 3}
+      propertyPath: openStartStory
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1367372497107390871, guid: 69d4b98f6cdbd8344babcd780f0b9fb1, type: 3}
+      propertyPath: startStory.contents.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1367372497107390871, guid: 69d4b98f6cdbd8344babcd780f0b9fb1, type: 3}
+      propertyPath: startStory.contents.Array.data[0]
+      value: 11111111
+      objectReference: {fileID: 0}
+    - target: {fileID: 1367372497107390871, guid: 69d4b98f6cdbd8344babcd780f0b9fb1, type: 3}
+      propertyPath: startStory.contents.Array.data[1]
+      value: 2222222
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69d4b98f6cdbd8344babcd780f0b9fb1, type: 3}
 --- !u!1001 &1440676160595864071

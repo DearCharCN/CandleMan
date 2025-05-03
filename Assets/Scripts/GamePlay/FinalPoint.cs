@@ -9,6 +9,14 @@ public class FinalPoint : MonoBehaviour,IInteractable
     [SerializeField]
     GameObject interactiveUI;
 
+    [Header("黑幕剧情开关")]
+    [SerializeField]
+    bool openStartStory;
+
+    [Header("剧情文本")]
+    [SerializeField]
+    StartStory startStory;
+
     private void OnEnable()
     {
         interactiveUI.SetActive(false);
@@ -51,6 +59,25 @@ public class FinalPoint : MonoBehaviour,IInteractable
     }
 
     public void OnInteractiveAction()
+    {
+        if (openStartStory)
+        {
+            FF8.UI.Open(UIID.UIStory, new object[]
+            {
+                new UIStoryViewArg()
+                {
+                    contents = startStory.contents
+                },
+                new System.Action(OnPass),
+            });
+        }
+        else
+        {
+            OnPass();
+        }
+    }
+
+    private void OnPass()
     {
         FF8.UI.Open(UIID.UIJiesuan);
     }
