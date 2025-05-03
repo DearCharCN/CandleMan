@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1497856881
+CRC: 4248338559
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 71db98b9425aa0d990c5048ecbd366df
+    Hash: 8c42f88a4e6088a7807c80de86f0c8c3
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 0004648b056898b04375be0a8f1e19ca
+    Hash: 2e743ac39ff7a91eea8c8a96f0ad7759
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -38,6 +38,8 @@ ClassTypes:
 - Class: 224
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: StartStory
 - AssemblyName: Unity.TextMeshPro
   ClassName: TMPro.VertexGradient
 - AssemblyName: UnityEngine.CoreModule

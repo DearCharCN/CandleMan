@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1208672387
+CRC: 2627157971
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -304,6 +304,7 @@ AssetBundleManifest:
         Dependency_15: ui/fonts/cn sdf_1
         Dependency_16: ui/sprites/dialog/common_duihuakuang_01
         Dependency_17: ui/sprites/dialog/common_duihuakuang_02
+        Dependency_18: ui/prefabs/presstips
     Info_68:
       Name: ui/prefabs/uimain
       Dependencies:
@@ -344,20 +345,27 @@ AssetBundleManifest:
       Dependencies:
         Dependency_0: ui/fonts/cn sdf
     Info_75:
-      Name: config/binconfigdata/localizedstrings
-      Dependencies: {}
-    Info_76:
-      Name: config/binconfigdata/sheet1
-      Dependencies: {}
-    Info_77:
-      Name: config/binconfigdata/sheet2
-      Dependencies: {}
-    Info_78:
       Name: gameplay/scene/prefabs/storytrigger
       Dependencies: {}
-    Info_79:
+    Info_76:
       Name: ui/sprites/dialog/common_duihuakuang_01
       Dependencies: {}
-    Info_80:
+    Info_77:
       Name: ui/sprites/dialog/common_duihuakuang_02
+      Dependencies: {}
+    Info_78:
+      Name: config/binconfigdata/localizedstrings
+      Dependencies: {}
+    Info_79:
+      Name: config/binconfigdata/sheet1
+      Dependencies: {}
+    Info_80:
+      Name: config/binconfigdata/sheet2
+      Dependencies: {}
+    Info_81:
+      Name: ui/prefabs/presstips
+      Dependencies:
+        Dependency_0: ui/prefabs/uistory_press
+    Info_82:
+      Name: ui/prefabs/uistory_press
       Dependencies: {}

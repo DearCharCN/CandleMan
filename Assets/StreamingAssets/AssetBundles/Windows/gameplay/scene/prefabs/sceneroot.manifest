@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1928295514
+CRC: 3605456
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: a192b12e132a1560d9a75028bf0524ee
+    Hash: 83bcd32acb0dce0dd30972bc9cf5d4cd
   TypeTreeHash:
     serializedVersion: 2
-    Hash: f0c565fbbe25a0d99c8c86b5354854f7
+    Hash: 98d9684b8702082cfa69252d3cf84a7d
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -38,6 +38,8 @@ ClassTypes:
 - Class: 224
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: StartStory
 - AssemblyName: Cinemachine
   ClassName: Cinemachine.CinemachineBlendDefinition
 - AssemblyName: Cinemachine

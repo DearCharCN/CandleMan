@@ -13,6 +13,7 @@ public enum UIID
     UIJiesuan = 4,//关卡结算
     UIDialog = 5,//对话界面
     UIStory = 6,//黑幕剧情
+    UINameList = 7,//制作人员名单
 }
 public class UIMgr
 {
@@ -24,8 +25,8 @@ public class UIMgr
         { UIID.UILevelSelect, new UIConfig(LayerType.UI, "UILevelSelect") },
         { UIID.UIJiesuan, new UIConfig(LayerType.UI, "UIJiesuan") },
         { UIID.UIDialog, new UIConfig(LayerType.UI, "UIDialog") },
-        { UIID.UIStory, new UIConfig(LayerType.UI, "UIStory") }
-        
+        { UIID.UIStory, new UIConfig(LayerType.UI, "UIStory") },
+        { UIID.UINameList, new UIConfig(LayerType.UI, "UINameList") },
     };
     public static void Init()
     {

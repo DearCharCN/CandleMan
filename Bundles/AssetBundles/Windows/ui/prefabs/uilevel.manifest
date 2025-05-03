@@ -1,17 +1,21 @@
 ManifestFileVersion: 0
-CRC: 286778305
+CRC: 179250441
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 1613fd87c6dac0f34e5753d475332ed9
+    Hash: e2f8b16c7d6889681f3a6e93a8f56bf2
   TypeTreeHash:
     serializedVersion: 2
-    Hash: aca64c5fcf774baec6ed64a382b7ccf2
+    Hash: 1406c85a0b7ccdeca657edd26bdba459
 HashAppended: 0
 ClassTypes:
 - Class: 1
   Script: {instanceID: 0}
 - Class: 21
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
   Script: {instanceID: 0}
 - Class: 114
   Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -21,6 +25,8 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d90025e341d4759428a3861788ea36fb, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: a323cc256a5942a43a917f9faed56ab6, type: 3}
 - Class: 114
@@ -38,7 +44,9 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 4744f2fcd057fe94bb22d80696186ba3, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: d90025e341d4759428a3861788ea36fb, type: 3}
+  Script: {fileID: 11500000, guid: f0ac634518ed0624cbabf6da13199d63, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4216061b99cf5cd44a17ef00408ff663, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 213
@@ -46,6 +54,8 @@ ClassTypes:
 - Class: 222
   Script: {instanceID: 0}
 - Class: 224
+  Script: {instanceID: 0}
+- Class: 225
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers:
 - AssemblyName: Unity.TextMeshPro
@@ -70,7 +80,9 @@ Assets:
 - Assets/AssetBundles/UI/Prefabs/UIDialog.prefab
 - Assets/AssetBundles/UI/Prefabs/UIJiesuan.prefab
 - Assets/AssetBundles/UI/Prefabs/UILevel.prefab
+- Assets/AssetBundles/UI/Prefabs/UIStory.prefab
 - Assets/AssetBundles/UI/Prefabs/UILevelSelect.prefab
+- Assets/AssetBundles/UI/Prefabs/UINameList.prefab
 Dependencies:
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/prop/common_jiaohukuang
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/ui/fonts/cn
@@ -79,6 +91,7 @@ Dependencies:
   sdf_1
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/ui/fonts/num
   sdf
+- D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/ui/prefabs/presstips
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/ui/sprites/common/common_icon_bofang
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/ui/sprites/common/common_icon_shezhi
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/ui/sprites/common/common_icon_zanting

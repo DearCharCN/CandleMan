@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 3232963841
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f99b08f8bd57e7610f5a694976742944
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c33d3594fb840798e3bd468c6c9d34d3
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundles/UI/Prefabs/UIStory_Press.anim
+Dependencies: []

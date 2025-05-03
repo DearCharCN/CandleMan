@@ -11,6 +11,7 @@ public class MainView : BaseView
         btn_start_btn.AddButtonClickListener(OnClickStart);
         btn_setting_btn.AddButtonClickListener(OnClickSetting);
         btn_exit_btn.AddButtonClickListener(OnClickExit);
+        btn_namelist_btn.AddButtonClickListener(OnClickNameList);
     }
     
     // 参数传入，每次打开UI都会执行
@@ -57,20 +58,24 @@ public class MainView : BaseView
     // 自动获取组件（自动生成，不能删除）
     [SerializeField] private UnityEngine.UI.Button btn_start_btn;
     [SerializeField] private UnityEngine.UI.Button btn_setting_btn;
+    [SerializeField] private UnityEngine.UI.Button btn_namelist_btn;
     [SerializeField] private UnityEngine.UI.Button btn_exit_btn;
     [SerializeField] private TMPro.TMP_Text TextTMP_TextTMP;
     [SerializeField] private TMPro.TMP_Text TextTMP_TextTMP_2;
     [SerializeField] private TMPro.TMP_Text TextTMP_TextTMP_3;
+    [SerializeField] private TMPro.TMP_Text TextTMP_TextTMP_4;
 
 #if UNITY_EDITOR
     protected override void SetComponents()
     {
         btn_start_btn = transform.Find("bg/btn_start").GetComponent<UnityEngine.UI.Button>();
         btn_setting_btn = transform.Find("bg/btn_setting").GetComponent<UnityEngine.UI.Button>();
+        btn_namelist_btn = transform.Find("bg/btn_namelist").GetComponent<UnityEngine.UI.Button>();
         btn_exit_btn = transform.Find("bg/btn_exit").GetComponent<UnityEngine.UI.Button>();
         TextTMP_TextTMP = transform.Find("bg/btn_start/Text (TMP)").GetComponent<TMPro.TMP_Text>();
         TextTMP_TextTMP_2 = transform.Find("bg/btn_setting/Text (TMP)").GetComponent<TMPro.TMP_Text>();
-        TextTMP_TextTMP_3 = transform.Find("bg/btn_exit/Text (TMP)").GetComponent<TMPro.TMP_Text>();
+        TextTMP_TextTMP_3 = transform.Find("bg/btn_namelist/Text (TMP)").GetComponent<TMPro.TMP_Text>();
+        TextTMP_TextTMP_4 = transform.Find("bg/btn_exit/Text (TMP)").GetComponent<TMPro.TMP_Text>();
     }
 #endif
     // 自动获取组件（自动生成，不能删除）
@@ -90,5 +95,11 @@ public class MainView : BaseView
     {
         Application.Quit();
     }
+
+    private void OnClickNameList(BaseEventData baseEventData)
+    {
+        FF8.UI.Open(UIID.UINameList);
+    }
+    
     #endregion
 }
