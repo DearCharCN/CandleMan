@@ -129,6 +129,9 @@ public class LevelSelectView : BaseView
 
     private bool CheckUnLock()
     {
+#if UNITY_EDITOR
+        return true;
+#endif
         return currentShowLv <= (passLevel + 1);
     }
 }
