@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/AssetBundles/GamePlay/Scene/2.unity
     guid: 308f24db25cf5314e87a1bd348c5b39b
+  - enabled: 1
+    path: Assets/AssetBundles/GamePlay/Scene/3.unity
+    guid: 02556818b92ecd44ba488e870d460087
   m_configObjects: {}
