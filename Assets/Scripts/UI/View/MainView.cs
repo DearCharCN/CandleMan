@@ -17,7 +17,7 @@ public class MainView : BaseView
     // 参数传入，每次打开UI都会执行
     protected override void OnAdded(int uiId, object[] args = null)
     {
-        
+        FF8.Audio.PlayMusic(AudioKey.MAIN_BG, loop: true);
     }
     
     // Start
@@ -46,7 +46,7 @@ public class MainView : BaseView
     // 删除之前，每次UI关闭前调用
     protected override void OnBeforeRemove()
     {
-        
+        //FF8.Audio.StopMusic();
     }
     
     // 删除，UI关闭后调用
@@ -83,6 +83,7 @@ public class MainView : BaseView
     #region 事件
     private void OnClickStart(BaseEventData baseEventData)
     {
+        FF8.Audio.PlayBtnClick(AudioKey.CLOCK_ENTER, loop: false);
         LevelSceneMgr.LoadScene(1);
     }
 

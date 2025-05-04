@@ -53,7 +53,7 @@ public class LevelSceneMgr : MonoBehaviour
             }
         });
         }
-
+        FF8.Audio.PlayMusic(AudioKey.LEVEL_BG, loop: true);
     }
 
     private void OnDestroy()
