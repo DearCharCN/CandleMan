@@ -15829,7 +15829,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7006071802509653066, guid: 62f327a6112909042921f7a511b52b66, type: 3}
       propertyPath: lvId
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7006071802509653067, guid: 62f327a6112909042921f7a511b52b66, type: 3}
       propertyPath: m_RootOrder

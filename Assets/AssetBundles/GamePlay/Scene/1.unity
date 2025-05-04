@@ -18339,6 +18339,10 @@ PrefabInstance:
       value: -320
       objectReference: {fileID: 0}
     - target: {fileID: 7006071802509653066, guid: 62f327a6112909042921f7a511b52b66, type: 3}
+      propertyPath: lvId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006071802509653066, guid: 62f327a6112909042921f7a511b52b66, type: 3}
       propertyPath: openStartStory
       value: 1
       objectReference: {fileID: 0}
