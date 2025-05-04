@@ -21,6 +21,13 @@ public class CandleInteractive : MonoBehaviour, IInteractable
     [SerializeField]
     string[] contents;
 
+    private void OnValidate()
+    {
+#if UNITY_EDITOR
+        GetComponent<CandleBody>().SetLength(characterConfig.length);
+#endif
+    }
+
     private void OnEnable()
     {
         interactiveUI.SetActive(false);
