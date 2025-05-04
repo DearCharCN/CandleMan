@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 2627157971
+CRC: 1942693581
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -325,12 +325,16 @@ AssetBundleManifest:
         Dependency_9: gameplay/scene/prefabs/character
         Dependency_10: gameplay/scene/prefabs/finalpoint
         Dependency_11: gameplay/scene/prefabs/body
-        Dependency_12: gameplay/scene/prefabs/sceneroot
+        Dependency_12: gameplay/scene/prefabs/moveplatform
+        Dependency_13: gameplay/scene/prefabs/sceneroot
     Info_70:
       Name: gameplay/scene/prefabs/sceneroot
       Dependencies:
         Dependency_0: gameplay/background/map_bg_00000
         Dependency_1: gameplay/background/map_bg_01101
+        Dependency_2: materials/custom_screenoverexposure
+        Dependency_3: gameplay/prop/common_mask_2
+        Dependency_4: gameplay/scene/prefabs/main camera
     Info_71:
       Name: gameplay/prop/keshoujiwu
       Dependencies: {}
@@ -354,18 +358,36 @@ AssetBundleManifest:
       Name: ui/sprites/dialog/common_duihuakuang_02
       Dependencies: {}
     Info_78:
-      Name: config/binconfigdata/localizedstrings
-      Dependencies: {}
-    Info_79:
-      Name: config/binconfigdata/sheet1
-      Dependencies: {}
-    Info_80:
-      Name: config/binconfigdata/sheet2
-      Dependencies: {}
-    Info_81:
       Name: ui/prefabs/presstips
       Dependencies:
         Dependency_0: ui/prefabs/uistory_press
-    Info_82:
+    Info_79:
       Name: ui/prefabs/uistory_press
       Dependencies: {}
+    Info_80:
+      Name: materials/custom_screenoverexposure
+      Dependencies:
+        Dependency_0: gameplay/character/sprite/candle_shangban_01_point2
+        Dependency_1: shaders/screenoverexposure
+    Info_81:
+      Name: shaders/screenoverexposure
+      Dependencies: {}
+    Info_82:
+      Name: config/binconfigdata/localizedstrings
+      Dependencies: {}
+    Info_83:
+      Name: config/binconfigdata/sheet1
+      Dependencies: {}
+    Info_84:
+      Name: config/binconfigdata/sheet2
+      Dependencies: {}
+    Info_85:
+      Name: gameplay/prop/common_mask_2
+      Dependencies: {}
+    Info_86:
+      Name: gameplay/scene/prefabs/cameraeffect
+      Dependencies: {}
+    Info_87:
+      Name: gameplay/scene/prefabs/main camera
+      Dependencies:
+        Dependency_0: gameplay/scene/prefabs/cameraeffect

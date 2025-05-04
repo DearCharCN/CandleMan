@@ -9,4 +9,5 @@ public enum EventEnum
 
     OnCharacterInited,
     OnPauseOrResume,
+    OnChangedCharacter,//´«»ð
 }

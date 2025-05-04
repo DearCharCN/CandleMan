@@ -20,7 +20,7 @@ namespace GamePlay
         }
 
         public bool IsDead => runTimeLength <= 0;
-
+        public float RunTimeLength => runTimeLength;
         float runTimeLength;
 
         private void Update()

@@ -27,7 +27,7 @@ namespace GamePlay
         public static void ManualDecelerationControlOnJump(float horizontalInput, Character character, Rigidbody2D rb)
         {
             // ºËÐÄ±äÁ¿
-            float factor = 0.35f;
+            float factor = 0.5f;
             float moveSpeed = character.GetMovementSpeed() * factor;
             float acceleration = 15f * factor;
             float deceleration = 10f * factor;

@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 4008249931
+CRC: 2052568912
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: e3aeaf31220e29df1b1e9706395b101d
+    Hash: c854ad6d54e852db59bb0d1cf12e5f7c
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 7d463c3686f64503d8b2513a845d7ca0
+    Hash: c9a82b0e568ec2100319a54080ba791e
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -29,11 +29,15 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 50
   Script: {instanceID: 0}
+- Class: 60
+  Script: {instanceID: 0}
 - Class: 61
   Script: {instanceID: 0}
 - Class: 62
   Script: {instanceID: 0}
 - Class: 66
+  Script: {instanceID: 0}
+- Class: 74
   Script: {instanceID: 0}
 - Class: 89
   Script: {instanceID: 0}
@@ -60,6 +64,8 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 7195d86a399868340b68b42137f82932, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 791bcfbcf184f6a4f9be8a761b4ff5e3, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: c28ffb2c1c5cce34486a9bebbbde02ab, type: 3}
@@ -78,11 +84,23 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 7b5934f70cf13e14a9ab475373e32c0c, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: fa7155796051b734daa718462081dc5f, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 8f968a64f7882d94cbcfc28b7dc54785, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: af7181f404f1447c0a7a17b3070b952b, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 10de35c06bd446e4d83ce130b7df02cc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ca7ba5e2017201f42bdc11dcf843a25b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: cfc336fba80b29e4e9931484793c78d9, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: bb0ab87b211aaa74ea51d7aa2a83889d, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 128
@@ -101,6 +119,8 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 224
   Script: {instanceID: 0}
+- Class: 225
+  Script: {instanceID: 0}
 - Class: 19719996
   Script: {instanceID: 0}
 - Class: 156049354
@@ -109,8 +129,12 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 1839735485
   Script: {instanceID: 0}
+- Class: 1971053207
+  Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
+- Assets/AssetBundles/GamePlay/Scene/4.unity
+- Assets/AssetBundles/GamePlay/Scene/5.unity
 - Assets/AssetBundles/GamePlay/Scene/3.unity
 Dependencies:
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/map/map_base_01
@@ -125,4 +149,5 @@ Dependencies:
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/scene/prefabs/body
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/scene/prefabs/character
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/scene/prefabs/finalpoint
+- D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/scene/prefabs/moveplatform
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/scene/prefabs/sceneroot
