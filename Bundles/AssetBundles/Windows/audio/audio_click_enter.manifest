@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 1394178291
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a913af4512dd1684cbeb05ef36357537
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundles/Audio/audio_click_enter.mp3
+Dependencies: []

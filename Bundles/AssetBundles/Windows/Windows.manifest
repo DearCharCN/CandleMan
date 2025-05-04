@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 4285577985
+CRC: 2133199276
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -372,21 +372,30 @@ AssetBundleManifest:
       Name: shaders/screenoverexposure
       Dependencies: {}
     Info_82:
-      Name: config/binconfigdata/localizedstrings
-      Dependencies: {}
-    Info_83:
-      Name: config/binconfigdata/sheet1
-      Dependencies: {}
-    Info_84:
-      Name: config/binconfigdata/sheet2
-      Dependencies: {}
-    Info_85:
       Name: gameplay/prop/common_mask_2
       Dependencies: {}
-    Info_86:
+    Info_83:
       Name: gameplay/scene/prefabs/cameraeffect
       Dependencies: {}
-    Info_87:
+    Info_84:
       Name: gameplay/scene/prefabs/main camera
       Dependencies:
         Dependency_0: gameplay/scene/prefabs/cameraeffect
+    Info_85:
+      Name: audio/audio_click_enter
+      Dependencies: {}
+    Info_86:
+      Name: audio/audio_level
+      Dependencies: {}
+    Info_87:
+      Name: audio/audio_main
+      Dependencies: {}
+    Info_88:
+      Name: config/binconfigdata/localizedstrings
+      Dependencies: {}
+    Info_89:
+      Name: config/binconfigdata/sheet1
+      Dependencies: {}
+    Info_90:
+      Name: config/binconfigdata/sheet2
+      Dependencies: {}
