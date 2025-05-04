@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3605456
+CRC: 3321424411
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 83bcd32acb0dce0dd30972bc9cf5d4cd
+    Hash: 2e88a8af12b82eaef71bc126625c5517
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 98d9684b8702082cfa69252d3cf84a7d
+    Hash: c3548cd584d67fbaa8204f5b279210db
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -14,6 +14,12 @@ ClassTypes:
 - Class: 4
   Script: {instanceID: 0}
 - Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
   Script: {instanceID: 0}
 - Class: 114
   Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -27,6 +33,10 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: cfc336fba80b29e4e9931484793c78d9, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: bb0ab87b211aaa74ea51d7aa2a83889d, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 213
@@ -36,6 +46,8 @@ ClassTypes:
 - Class: 223
   Script: {instanceID: 0}
 - Class: 224
+  Script: {instanceID: 0}
+- Class: 225
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers:
 - AssemblyName: Assembly-CSharp
@@ -55,3 +67,7 @@ Assets:
 Dependencies:
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/background/map_bg_00000
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/background/map_bg_01101
+- D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/prop/common_mask_2
+- D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/scene/prefabs/main
+  camera
+- D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/materials/custom_screenoverexposure

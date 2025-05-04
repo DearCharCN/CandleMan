@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 2127400539
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a73cef4473b336fbd19fa5ec83b08328
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: bbfaa0f72a86ec3f92b1fc3129632085
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundles/GamePlay/Scene/Prefabs/Main Camera.controller
+Dependencies:
+- D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/scene/prefabs/cameraeffect
