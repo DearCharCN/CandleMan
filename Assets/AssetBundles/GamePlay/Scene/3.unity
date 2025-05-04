@@ -9680,7 +9680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1440676161582287897, guid: da513acc2decb1a4bb158fb1ca5bf5ac, type: 3}
       propertyPath: characterConfig.movementSpeed
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1440676161582287901, guid: da513acc2decb1a4bb158fb1ca5bf5ac, type: 3}
       propertyPath: m_Name
@@ -9837,7 +9837,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7753013702266544429, guid: b394dfec7180da94487cd99cd6ed6990, type: 3}
       propertyPath: characterConfig.movementSpeed
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b394dfec7180da94487cd99cd6ed6990, type: 3}

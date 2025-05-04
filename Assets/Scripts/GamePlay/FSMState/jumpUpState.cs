@@ -36,7 +36,7 @@ namespace GamePlay
                 horizontalInput = 1f;
             }
 
-            CharacterUtils.ManualDecelerationControlOnJump(horizontalInput, Character, Rigidbody);
+            CharacterUtils.ManualDecelerationControl(horizontalInput, Character, Rigidbody, 0.5f);
         }
     }
 }
