@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1942693581
+CRC: 4285577985
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -367,8 +367,7 @@ AssetBundleManifest:
     Info_80:
       Name: materials/custom_screenoverexposure
       Dependencies:
-        Dependency_0: gameplay/character/sprite/candle_shangban_01_point2
-        Dependency_1: shaders/screenoverexposure
+        Dependency_0: shaders/screenoverexposure
     Info_81:
       Name: shaders/screenoverexposure
       Dependencies: {}

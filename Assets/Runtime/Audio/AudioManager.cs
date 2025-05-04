@@ -165,7 +165,12 @@ namespace F8Framework.Core
             }
             _audioMusic.Load(assetName, callback, loop, priority, fadeDuration);
         }
-        
+
+        public void StopMusic()
+        {
+            _audioMusic.MusicSource.Stop();
+        }
+
         // 设置背景乐播放进度
         public float SetProgressMusic
         {

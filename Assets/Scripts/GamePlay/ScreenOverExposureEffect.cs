@@ -22,6 +22,7 @@ public class ScreenOverExposureEffect : MonoBehaviour
         }
     }
 
+
     private void OnEnable()
     {
         FF8.Message.AddEventListener(EventEnum.OnChangedCharacter, OnChangedCharacter, this);

@@ -1,17 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3203408813
+CRC: 3722039743
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: ba83a5f03635fbe241f8f287affc89cc
+    Hash: 496789661ebc4ee6db48106a03b2a95d
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 16c36b7b3350fad15821c42f96c32ccb
+    Hash: 1397ad235555a4f37791d5b3ff19e7a7
 HashAppended: 0
 ClassTypes:
 - Class: 21
-  Script: {instanceID: 0}
-- Class: 28
   Script: {instanceID: 0}
 - Class: 48
   Script: {instanceID: 0}
@@ -19,5 +17,4 @@ SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/AssetBundles/Materials/Custom_ScreenOverExposure.mat
 Dependencies:
-- D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/gameplay/character/sprite/candle_shangban_01_point2
 - D:/Projects/Unity/CandleMan/Assets/../Bundles/AssetBundles/Windows/shaders/screenoverexposure

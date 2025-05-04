@@ -94,6 +94,7 @@ public class LevelSelectView : BaseView
         bool curLevelUnlock = CheckUnLock();
         if (curLevelUnlock)
         {
+            FF8.Audio.PlayBtnClick(AudioKey.CLOCK_ENTER, loop: false);
             LevelSceneMgr.LoadScene(currentShowLv);
             CLoseSelf();
         }
