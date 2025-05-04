@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1440676159932888314}
   - component: {fileID: 1440676159932888315}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: character_cam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,7 +81,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1440676159962233421}
   - component: {fileID: 1440676159962233422}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: candle_zhongjian_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1440676160444634510}
   - component: {fileID: 1440676160444634509}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: candle_light_01_point2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,7 +234,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 944c29467cd4d774a8bd9f96c361026d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.6}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -254,7 +254,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1440676160517398362}
   - component: {fileID: 1440676160517398361}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: candle_fire_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -318,7 +318,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: efd3df04b97f2c34fbc98459c0f4e79e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.6}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -338,7 +338,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1440676160597465557}
   - component: {fileID: 1440676160597465556}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: candle_xiaban_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -423,7 +423,7 @@ GameObject:
   - component: {fileID: 1440676160631349983}
   - component: {fileID: 1440676160631349980}
   - component: {fileID: 1440676160631349982}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -489,7 +489,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1440676161042188015}
   - component: {fileID: 1440676161042188014}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: candle_shangban_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -572,7 +572,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1440676161108561589}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -612,7 +612,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1440676161354817089}
   - component: {fileID: 1440676161354817088}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: candle_huawen_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -695,7 +695,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1440676161484882693}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: rect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -734,7 +734,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1440676161496347740}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -777,7 +777,7 @@ GameObject:
   - component: {fileID: 1440676161582287910}
   - component: {fileID: 1440676161582287911}
   - component: {fileID: 5270245710920550402}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: character
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -899,9 +899,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   length: 1
   unitHeight: 1.525
+  adjustCollider: 1
   rootTrans: {fileID: 1440676161484882693}
   bodySpriteTrans: {fileID: 1440676159962233421}
-  boxCollider2D: {fileID: 1440676161582287910}
+  boxCollider2Ds:
+  - {fileID: 1440676161582287910}
   bottomTexture: {fileID: 1440676161354817090}
   lightSprites:
   - {fileID: 1440676160444634509}

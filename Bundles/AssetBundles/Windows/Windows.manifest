@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 2133199276
+CRC: 4095359290
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -81,9 +81,8 @@ AssetBundleManifest:
         Dependency_15: gameplay/background/map_bg_01301
         Dependency_16: gameplay/background/map_bg_01302
         Dependency_17: gameplay/scene/prefabs/body
-        Dependency_18: gameplay/scene/prefabs/moveplatform
-        Dependency_19: gameplay/scene/prefabs/sceneroot
-        Dependency_20: gameplay/scene/prefabs/storytrigger
+        Dependency_18: gameplay/scene/prefabs/sceneroot
+        Dependency_19: gameplay/scene/prefabs/storytrigger
     Info_16:
       Name: gameplay/scene/2
       Dependencies:
