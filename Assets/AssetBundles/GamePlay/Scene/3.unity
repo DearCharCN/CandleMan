@@ -180,28 +180,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9912a28f1694d34d9ca9bbddf7e4562, type: 3}
---- !u!1 &167258932 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 807581006243740050, guid: b394dfec7180da94487cd99cd6ed6990, type: 3}
-  m_PrefabInstance: {fileID: 7381371144306210707}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &167258940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 167258932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b5934f70cf13e14a9ab475373e32c0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterConfig:
-    movementSpeed: 3.3
-    jumpForce: 8
-    burningTime: 60
-    length: 1.5
 --- !u!1 &865569538
 GameObject:
   m_ObjectHideFlags: 0
@@ -15981,7 +15959,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7006071802509653066, guid: 62f327a6112909042921f7a511b52b66, type: 3}
       propertyPath: lvId
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7006071802509653067, guid: 62f327a6112909042921f7a511b52b66, type: 3}
       propertyPath: m_RootOrder

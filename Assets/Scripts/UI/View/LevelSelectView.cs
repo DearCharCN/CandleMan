@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using F8Framework.Core;
 using F8Framework.Launcher;
 using UI;

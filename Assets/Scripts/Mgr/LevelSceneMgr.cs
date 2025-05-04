@@ -209,7 +209,7 @@ public class LevelSceneMgr : MonoBehaviour
 
         IsPause = true;
         Time.timeScale = 0f;
-
+        Debug.Log($"Time.timeScale {Time.timeScale}");
         FF8.Message.DispatchEvent(EventEnum.OnPauseOrResume);
     }
 
@@ -220,7 +220,7 @@ public class LevelSceneMgr : MonoBehaviour
 
         IsPause = false;
         Time.timeScale = 1f;
-
+        Debug.Log($"Time.timeScale {Time.timeScale}");
         FF8.Message.DispatchEvent(EventEnum.OnPauseOrResume);
     }
 }
