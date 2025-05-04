@@ -15938,7 +15938,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1440676161582287897, guid: da513acc2decb1a4bb158fb1ca5bf5ac, type: 3}
       propertyPath: characterConfig.burningTime
-      value: 100
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 1440676161582287897, guid: da513acc2decb1a4bb158fb1ca5bf5ac, type: 3}
       propertyPath: characterConfig.movementSpeed
@@ -16072,6 +16072,18 @@ PrefabInstance:
     - target: {fileID: 7753013702266544429, guid: b394dfec7180da94487cd99cd6ed6990, type: 3}
       propertyPath: contents.Array.data[0]
       value: "\u8499\u773C\u5DEB\u5973\uFF1A\r\n\u4E16\u754C\u5E76\u975E\u59CB\u7EC8\u9ED1\u6697\uFF0C\r\n\u3010\u6559\u4F1A\u3011\u5784\u65AD\u5149\u660E\uFF0C\u4F7F\u4EBA\u6210\u4E3A\u76F2\u8005\u3002\r\n\u8BF7\u4F60\u4F20\u9012\u6211\u7684\u706B\u7130\u3002\r\n\u8BF7\u4F60\u4EE3\u6211\uFF0C\r\n\u89C1\u751F\u7075\u5EF6\u7EF5\u7684\u5927\u5730\uFF0C\r\n\u4E0E\u7E41\u661F\u94FA\u7F00\u7684\u5BF0\u5B87\u3002\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7753013702266544429, guid: b394dfec7180da94487cd99cd6ed6990, type: 3}
+      propertyPath: characterConfig.jumpForce
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7753013702266544429, guid: b394dfec7180da94487cd99cd6ed6990, type: 3}
+      propertyPath: characterConfig.burningTime
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7753013702266544429, guid: b394dfec7180da94487cd99cd6ed6990, type: 3}
+      propertyPath: characterConfig.movementSpeed
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b394dfec7180da94487cd99cd6ed6990, type: 3}
